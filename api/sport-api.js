@@ -409,25 +409,30 @@ export default function handler(req, res) {
     ]
   },
   {
-    "leagueId": "UNITED_CUP",
-    "leagueName": "United Cup (Tennis)",
-    "country": "Australia",
-    "sport": "Tennis",
-    "teams": [
-      "Poland", "Germany", "United States", "China", "Great Britain", "France", 
-      "Australia", "Spain", "Italy", "Greece", "Switzerland", "Norway", 
-      "Canada", "Czech Republic", "Brazil", "Kazakhstan", "Argentina", "Croatia"
-    ]
-  },
-  {
-    "leagueId": "ATP_WTA_GRAND_SLAM",
-    "leagueName": "Grand Slam / ATP / WTA",
+    "leagueId": "TENNIS_GLOBAL",
+    "leagueName": "World Tennis (ATP/WTA)",
     "country": "International",
     "sport": "Tennis",
     "teams": [
-       "Novak Djokovic", "Carlos Alcaraz", "Jannik Sinner", "Daniil Medvedev", 
-       "Iga Swiatek", "Aryna Sabalenka", "Coco Gauff", "Elena Rybakina",
-       "Rafael Nadal", "Alexander Zverev", "Stefanos Tsitsipas", "Holger Rune"
+      "Tennis", 
+      "ATP", 
+      "WTA", 
+      "United Cup", 
+      "Australian Open", 
+      "Grand Slam", 
+      "Brisbane", 
+      "Adelaide", 
+      "Auckland", 
+      "Hobart", 
+      "Canberra", 
+      "Noumea", 
+      "Nonthaburi", 
+      "Doubles", 
+      "Singles", 
+      "Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7", "Day 8",
+      "Quarterfinal", "Semifinal", "Final",
+      "Court",
+      "Live Stream"
     ]
   }
 ];
