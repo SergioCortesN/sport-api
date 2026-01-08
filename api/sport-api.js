@@ -321,6 +321,92 @@ export default function handler(req, res) {
       "Universitario", "Alianza Lima", "Junior", "Millonarios", "Estudiantes", "Talleres",
       "Rosario Central", "San Lorenzo"
     ]
+  },
+  {
+    "leagueId": "NHL",
+    "leagueName": "National Hockey League",
+    "country": "USA/Canada",
+    "sport": "Hockey",
+    "teams": [
+      "Anaheim Ducks", "Boston Bruins", "Buffalo Sabres", "Calgary Flames", "Carolina Hurricanes",
+      "Chicago Blackhawks", "Colorado Avalanche", "Columbus Blue Jackets", "Dallas Stars",
+      "Detroit Red Wings", "Edmonton Oilers", "Florida Panthers", "Los Angeles Kings",
+      "Minnesota Wild", "Montreal Canadiens", "Nashville Predators", "New Jersey Devils",
+      "New York Islanders", "New York Rangers", "Ottawa Senators", "Philadelphia Flyers",
+      "Pittsburgh Penguins", "San Jose Sharks", "Seattle Kraken", "St. Louis Blues",
+      "Tampa Bay Lightning", "Toronto Maple Leafs", "Utah Hockey Club", "Vancouver Canucks",
+      "Vegas Golden Knights", "Washington Capitals", "Winnipeg Jets"
+    ]
+  },
+  {
+    "leagueId": "KHL",
+    "leagueName": "Kontinental Hockey League (KHL)",
+    "country": "Russia/Eurasia",
+    "sport": "Hockey",
+    "teams": [
+      "CSKA Moscow", "SKA St. Petersburg", "Metallurg Magnitogorsk", "Avangard Omsk",
+      "Ak Bars Kazan", "Dynamo Moscow", "Lokomotiv Yaroslavl", "Salavat Yulaev Ufa",
+      "Traktor Chelyabinsk", "Avtomobilist Yekaterinburg", "Sibir Novosibirsk", "Amur Khabarovsk",
+      "Admiral Vladivostok", "Barys Astana", "Kunlun Red Star", "Dinamo Minsk",
+      "Severstal Cherepovets", "Torpedo Nizhny Novgorod", "HC Sochi", "Vityaz Moscow Region",
+      "Neftekhimik Nizhnekamsk", "Spartak Moscow", "Lada Togliatti"
+    ]
+  },
+  {
+    "leagueId": "SHL",
+    "leagueName": "Swedish Hockey League (SHL)",
+    "country": "Sweden",
+    "sport": "Hockey",
+    "teams": [
+      "Färjestad BK", "Växjö Lakers", "Skellefteå AIK", "Frölunda HC", "Leksands IF",
+      "Linköping HC", "Luleå HF", "Timrå IK", "Rögle BK", "Örebro HK",
+      "MoDo Hockey", "Malmö Redhawks", "HV71", "Brynäs IF"
+    ]
+  },
+  {
+    "leagueId": "LIIGA",
+    "leagueName": "Liiga",
+    "country": "Finland",
+    "sport": "Hockey",
+    "teams": [
+      "Tappara", "Ilves", "HIFK", "Kärpät", "Jukurit", "Pelicans", "KalPa",
+      "Lukko", "TPS", "Sport", "Ässät", "KooKoo", "JYP", "HPK", "SaiPa", "Kiekko-Espoo"
+    ]
+  },
+  {
+    "leagueId": "EXTRALIGA_CZ",
+    "leagueName": "Czech Extraliga",
+    "country": "Czech Republic",
+    "sport": "Hockey",
+    "teams": [
+      "HC Dynamo Pardubice", "HC Sparta Praha", "HC Oceláři Třinec", "HC Kometa Brno",
+      "Bílí Tygři Liberec", "HC Verva Litvínov", "Mountfield HK", "HC Vítkovice Ridera",
+      "HC Energie Karlovy Vary", "BK Mladá Boleslav", "HC Olomouc", "HC Škoda Plzeň",
+      "Motor České Budějovice", "Rytíři Kladno"
+    ]
+  },
+  {
+    "leagueId": "NL_SWISS",
+    "leagueName": "National League (NL)",
+    "country": "Switzerland",
+    "sport": "Hockey",
+    "teams": [
+      "ZSC Lions", "SC Bern", "HC Fribourg-Gottéron", "EV Zug", "Lausanne HC",
+      "HC Lugano", "HC Davos", "Genève-Servette HC", "HC Ambrì-Piotta", "SCL Tigers",
+      "EHC Biel-Bienne", "SC Rapperswil-Jona Lakers", "EHC Kloten", "HC Ajoie"
+    ]
+  },
+  {
+    "leagueId": "DEL",
+    "leagueName": "Deutsche Eishockey Liga (DEL)",
+    "country": "Germany",
+    "sport": "Hockey",
+    "teams": [
+      "Eisbären Berlin", "EHC Red Bull München", "Adler Mannheim", "Kölner Haie",
+      "Straubing Tigers", "Grizzlys Wolfsburg", "Schwenninger Wild Wings", "Pinguins Bremerhaven",
+      "ERC Ingolstadt", "Löwen Frankfurt", "Nürnberg Ice Tigers", "Düsseldorfer EG",
+      "Iserlohn Roosters", "Augsburger Panther"
+    ]
   }
 ];
 
