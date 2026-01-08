@@ -1,0 +1,8 @@
+services:
+  node:
+    image: node:18-slim
+    working_dir: /app
+    volumes:
+      - ./:/app
+    # Mantenemos el contenedor vivo para poder ejecutar comandos cuando queramos
+    command: tail -f /dev/null
