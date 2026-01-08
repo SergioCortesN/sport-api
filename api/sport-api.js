@@ -407,33 +407,6 @@ export default function handler(req, res) {
       "ERC Ingolstadt", "Löwen Frankfurt", "Nürnberg Ice Tigers", "Düsseldorfer EG",
       "Iserlohn Roosters", "Augsburger Panther"
     ]
-  },
-  {
-    "leagueId": "TENNIS_GLOBAL",
-    "leagueName": "World Tennis (ATP/WTA)",
-    "country": "International",
-    "sport": "Tennis",
-    "teams": [
-      "Tennis", 
-      "ATP", 
-      "WTA", 
-      "United Cup", 
-      "Australian Open", 
-      "Grand Slam", 
-      "Brisbane", 
-      "Adelaide", 
-      "Auckland", 
-      "Hobart", 
-      "Canberra", 
-      "Noumea", 
-      "Nonthaburi", 
-      "Doubles", 
-      "Singles", 
-      "Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7", "Day 8",
-      "Quarterfinal", "Semifinal", "Final",
-      "Court",
-      "Live Stream"
-    ]
   }
 ];
 
