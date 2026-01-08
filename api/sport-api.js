@@ -407,6 +407,28 @@ export default function handler(req, res) {
       "ERC Ingolstadt", "Löwen Frankfurt", "Nürnberg Ice Tigers", "Düsseldorfer EG",
       "Iserlohn Roosters", "Augsburger Panther"
     ]
+  },
+  {
+    "leagueId": "UNITED_CUP",
+    "leagueName": "United Cup (Tennis)",
+    "country": "Australia",
+    "sport": "Tennis",
+    "teams": [
+      "Poland", "Germany", "United States", "China", "Great Britain", "France", 
+      "Australia", "Spain", "Italy", "Greece", "Switzerland", "Norway", 
+      "Canada", "Czech Republic", "Brazil", "Kazakhstan", "Argentina", "Croatia"
+    ]
+  },
+  {
+    "leagueId": "ATP_WTA_GRAND_SLAM",
+    "leagueName": "Grand Slam / ATP / WTA",
+    "country": "International",
+    "sport": "Tennis",
+    "teams": [
+       "Novak Djokovic", "Carlos Alcaraz", "Jannik Sinner", "Daniil Medvedev", 
+       "Iga Swiatek", "Aryna Sabalenka", "Coco Gauff", "Elena Rybakina",
+       "Rafael Nadal", "Alexander Zverev", "Stefanos Tsitsipas", "Holger Rune"
+    ]
   }
 ];
 
