@@ -865,6 +865,87 @@ export default function handler(req, res) {
       "IBF",
       "WBO"
     ]
+  },
+  // === SECCIÓN AMERICAN FOOTBALL ===
+
+  // 1. NFL (National Football League)
+  {
+    "leagueId": "NFL",
+    "leagueName": "NFL",
+    "country": "USA",
+    "sport": "American Football",
+    "teams": [
+      // AFC East
+      "Buffalo Bills", "Miami Dolphins", "New England Patriots", "New York Jets",
+      // AFC North
+      "Baltimore Ravens", "Cincinnati Bengals", "Cleveland Browns", "Pittsburgh Steelers",
+      // AFC South
+      "Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Tennessee Titans",
+      // AFC West
+      "Denver Broncos", "Kansas City Chiefs", "Las Vegas Raiders", "Los Angeles Chargers",
+      // NFC East
+      "Dallas Cowboys", "New York Giants", "Philadelphia Eagles", "Washington Commanders",
+      // NFC North
+      "Chicago Bears", "Detroit Lions", "Green Bay Packers", "Minnesota Vikings",
+      // NFC South
+      "Atlanta Falcons", "Carolina Panthers", "New Orleans Saints", "Tampa Bay Buccaneers",
+      // NFC West
+      "Arizona Cardinals", "Los Angeles Rams", "San Francisco 49ers", "Seattle Seahawks"
+    ]
+  },
+
+  // 2. NCAA - College Football (Top 25 + Populares)
+  // Nota: Hay cientos de equipos, aquí pongo los que suelen salir en TV.
+  {
+    "leagueId": "NCAA_FOOTBALL",
+    "leagueName": "NCAA College Football",
+    "country": "USA",
+    "sport": "American Football",
+    "teams": [
+      "Alabama Crimson Tide", "Alabama",
+      "Georgia Bulldogs", "Georgia",
+      "Michigan Wolverines", "Michigan",
+      "Ohio State Buckeyes", "Ohio State",
+      "Texas Longhorns", "Texas",
+      "Oregon Ducks", "Oregon", // Estaba en tu log
+      "Indiana Hoosiers", "Indiana", // Estaba en tu log
+      "Notre Dame Fighting Irish", "Notre Dame",
+      "Florida State Seminoles", "Florida State",
+      "LSU Tigers", "LSU",
+      "Clemson Tigers", "Clemson",
+      "USC Trojans", "USC",
+      "Oklahoma Sooners", "Oklahoma",
+      "Tennessee Volunteers", "Tennessee",
+      "Penn State Nittany Lions", "Penn State",
+      "Washington Huskies", "Washington",
+      "Miami Hurricanes", "Miami (FL)",
+      "Ole Miss Rebels", "Ole Miss",
+      "Utah Utes", "Utah",
+      "Colorado Buffaloes", "Colorado"
+    ]
+  },
+
+  // 3. OTRAS LIGAS (UFL, CFL) - Por si acaso
+  {
+    "leagueId": "UFL",
+    "leagueName": "UFL (United Football League)",
+    "country": "USA",
+    "sport": "American Football",
+    "teams": [
+      "Birmingham Stallions", "Houston Roughnecks", "Memphis Showboats", "Michigan Panthers",
+      "Arlington Renegades", "D.C. Defenders", "San Antonio Brahmas", "St. Louis Battlehawks"
+    ]
+  },
+  {
+    "leagueId": "CFL",
+    "leagueName": "CFL (Canadian Football League)",
+    "country": "Canada",
+    "sport": "American Football",
+    "teams": [
+      "BC Lions", "Calgary Stampeders", "Edmonton Elks", "Saskatchewan Roughriders",
+      "Winnipeg Blue Bombers", "Hamilton Tiger-Cats", "Montreal Alouettes", 
+      "Ottawa Redblacks", "Toronto Argonauts"
+    ]
   }
 ];
 
