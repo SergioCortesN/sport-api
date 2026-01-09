@@ -479,6 +479,121 @@ export default function handler(req, res) {
       "Laver Cup",
       "Hopman Cup"
     ]
+  },
+
+  // === SECCIÓN BASEBALL ===
+  
+  // 1. MLB - Major League Baseball (USA)
+  {
+    "leagueId": "MLB",
+    "leagueName": "MLB",
+    "country": "USA",
+    "sport": "Baseball",
+    "teams": [
+      "Arizona Diamondbacks", "Atlanta Braves", "Baltimore Orioles", "Boston Red Sox",
+      "Chicago Cubs", "Chicago White Sox", "Cincinnati Reds", "Cleveland Guardians",
+      "Colorado Rockies", "Detroit Tigers", "Houston Astros", "Kansas City Royals",
+      "Los Angeles Angels", "Los Angeles Dodgers", "Miami Marlins", "Milwaukee Brewers",
+      "Minnesota Twins", "New York Mets", "New York Yankees", "Oakland Athletics",
+      "Philadelphia Phillies", "Pittsburgh Pirates", "San Diego Padres", "San Francisco Giants",
+      "Seattle Mariners", "St. Louis Cardinals", "Tampa Bay Rays", "Texas Rangers",
+      "Toronto Blue Jays", "Washington Nationals"
+    ]
+  },
+
+  // 2. LMB - Liga Mexicana de Béisbol (Verano)
+  {
+    "leagueId": "LMB",
+    "leagueName": "Liga Mexicana de Béisbol",
+    "country": "Mexico",
+    "sport": "Baseball",
+    "teams": [
+      "Diablos Rojos del México", "Sultanes de Monterrey", "Toros de Tijuana",
+      "Tigres de Quintana Roo", "Leones de Yucatán", "El Águila de Veracruz",
+      "Guerreros de Oaxaca", "Pericos de Puebla", "Olmecas de Tabasco",
+      "Saraperos de Saltillo", "Acereros de Monclova", "Tecolotes de los Dos Laredos",
+      "Algodoneros de Unión Laguna", "Rieleros de Aguascalientes", "Generales de Durango",
+      "Bravos de León", "Piratas de Campeche", "Conspiradores de Querétaro",
+      "Dorados de Chihuahua", "Charros de Jalisco (LMB)"
+    ]
+  },
+
+  // 3. LMP - Liga Mexicana del Pacífico (Invierno)
+  {
+    "leagueId": "LMP",
+    "leagueName": "Liga ARCO Mexicana del Pacífico",
+    "country": "Mexico",
+    "sport": "Baseball",
+    "teams": [
+      "Naranjeros de Hermosillo", "Tomateros de Culiacán", "Charros de Jalisco",
+      "Venados de Mazatlán", "Cañeros de Los Mochis", "Yaquis de Obregón",
+      "Águilas de Mexicali", "Mayos de Navojoa", "Algodoneros de Guasave",
+      "Sultanes de Monterrey (LMP)"
+    ]
+  },
+
+  // 4. NPB - Nippon Professional Baseball (Japón)
+  {
+    "leagueId": "NPB",
+    "leagueName": "NPB (Japan)",
+    "country": "Japan",
+    "sport": "Baseball",
+    "teams": [
+      "Yomiuri Giants", "Hanshin Tigers", "Yokohama DeNA BayStars", "Hiroshima Toyo Carp",
+      "Chunichi Dragons", "Tokyo Yakult Swallows", "Fukuoka SoftBank Hawks",
+      "Chiba Lotte Marines", "Saitama Seibu Lions", "Tohoku Rakuten Golden Eagles",
+      "Hokkaido Nippon-Ham Fighters", "Orix Buffaloes"
+    ]
+  },
+
+  // 5. KBO - Korean Baseball Organization (Corea del Sur)
+  {
+    "leagueId": "KBO",
+    "leagueName": "KBO League",
+    "country": "South Korea",
+    "sport": "Baseball",
+    "teams": [
+      "KIA Tigers", "Samsung Lions", "LG Twins", "Doosan Bears", "KT Wiz",
+      "SSG Landers", "Lotte Giants", "Hanwha Eagles", "NC Dinos", "Kiwoom Heroes"
+    ]
+  },
+
+  // 6. LIDOM - Liga de Béisbol Profesional (República Dominicana)
+  {
+    "leagueId": "LIDOM",
+    "leagueName": "LIDOM",
+    "country": "Dominican Republic",
+    "sport": "Baseball",
+    "teams": [
+      "Tigres del Licey", "Águilas Cibaeñas", "Leones del Escogido",
+      "Gigantes del Cibao", "Estrellas Orientales", "Toros del Este"
+    ]
+  },
+
+  // 7. LVBP - Liga Venezolana de Béisbol Profesional (Venezuela)
+  {
+    "leagueId": "LVBP",
+    "leagueName": "LVBP",
+    "country": "Venezuela",
+    "sport": "Baseball",
+    "teams": [
+      "Leones del Caracas", "Navegantes del Magallanes", "Tiburones de La Guaira",
+      "Cardenales de Lara", "Tigres de Aragua", "Águilas del Zulia",
+      "Caribes de Anzoátegui", "Bravos de Margarita"
+    ]
+  },
+
+  // 8. SERIE DEL CARIBE (Torneo de Campeones)
+  {
+    "leagueId": "SERIE_DEL_CARIBE",
+    "leagueName": "Serie del Caribe",
+    "country": "International",
+    "sport": "Baseball",
+    "teams": [
+      "Mexico (Representante)", "Dominican Republic (Representante)",
+      "Venezuela (Representante)", "Puerto Rico (Representante)",
+      "Panama (Representante)", "Curacao (Representante)", "Nicaragua (Representante)"
+    ]
   }
 ];
 
