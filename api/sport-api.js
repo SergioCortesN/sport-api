@@ -594,6 +594,32 @@ export default function handler(req, res) {
       "Venezuela (Representante)", "Puerto Rico (Representante)",
       "Panama (Representante)", "Curacao (Representante)", "Nicaragua (Representante)"
     ]
+  },
+
+  // 9. ABL - Australian Baseball League (La de tus logs)
+  {
+    "leagueId": "ABL",
+    "leagueName": "Australian Baseball League",
+    "country": "Australia",
+    "sport": "Baseball",
+    "teams": [
+      "Adelaide Giants", "Brisbane Bandits", "Canberra Cavalry",
+      "Melbourne Aces", "Perth Heat", "Sydney Blue Sox",
+      "Auckland Tuatara" // Nota: Es de Nueva Zelanda pero juega en la liga de Australia
+    ]
+  },
+
+  // 10. CPBL - Chinese Professional Baseball League (Taiwán)
+  // Nota: Muy popular en apuestas, suele salir en los feeds temprano
+  {
+    "leagueId": "CPBL",
+    "leagueName": "CPBL (Taiwan)",
+    "country": "Taiwan",
+    "sport": "Baseball",
+    "teams": [
+      "CTBC Brothers", "Fubon Guardians", "Rakuten Monkeys",
+      "Uni-President 7-Eleven Lions", "Wei Chuan Dragons", "TSG Hawks"
+    ]
   }
 ];
 
