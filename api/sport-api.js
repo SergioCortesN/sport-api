@@ -411,68 +411,33 @@ export default function handler(req, res) {
 
   // === SECCIÓN TENNIS ===
   {
-    "leagueId": "brisbane_intl", // ID coincide con tu App Android
-    "leagueName": "Brisbane International",
-    "country": "Australia",
-    "sport": "Tennis",
-    "teams": [] 
-  },
-  {
-    "leagueId": "auckland_open",
-    "leagueName": "Auckland Open (ASB Classic)",
-    "country": "New Zealand",
-    "sport": "Tennis",
-    "teams": []
-  },
-  {
-    "leagueId": "united_cup",
-    "leagueName": "United Cup",
-    "country": "International",
-    "sport": "Tennis",
-    "teams": []
-  },
-  {
-    "leagueId": "australian_open",
-    "leagueName": "Australian Open",
-    "country": "Australia",
-    "sport": "Tennis",
-    "teams": []
-  },
-  {
-    "leagueId": "adelaide_intl",
-    "leagueName": "Adelaide International",
-    "country": "Australia",
-    "sport": "Tennis",
-    "teams": []
-  },
-  {
-    "leagueId": "wimbledon",
-    "leagueName": "Wimbledon",
-    "country": "UK",
-    "sport": "Tennis",
-    "teams": []
-  },
-  {
-    "leagueId": "roland_garros",
-    "leagueName": "Roland Garros (French Open)",
-    "country": "France",
-    "sport": "Tennis",
-    "teams": []
-  },
-  {
-    "leagueId": "us_open",
-    "leagueName": "US Open",
-    "country": "USA",
-    "sport": "Tennis",
-    "teams": []
-  },
-  {
-    "leagueId": "davis_cup",
-    "leagueName": "Davis Cup",
-    "country": "International",
-    "sport": "Tennis",
-    "teams": []
-  }
+  "leagueId": "ATP_WTA_INTERNATIONAL",
+  "leagueName": "ATP/WTA International",
+  "country": "International",
+  "sport": "Tennis",
+  "teams": [
+    "Brisbane International",
+    "Auckland Open",
+    "United Cup",
+    "Adelaide International",
+    "Australian Open",
+    "Wimbledon",
+    "Roland Garros",
+    "French Open",
+    "US Open",
+    "Indian Wells",
+    "Miami Open",
+    "Monte Carlo",
+    "Madrid Open",
+    "Rome Masters",
+    "Canadian Open",
+    "Cincinnati",
+    "Shanghai Masters",
+    "Paris Masters",
+    "ATP Finals",
+    "WTA Finals"
+  ]
+}
 ];
 
   // Respondemos con el JSON y estado 200 (OK)
