@@ -620,6 +620,127 @@ export default function handler(req, res) {
       "CTBC Brothers", "Fubon Guardians", "Rakuten Monkeys",
       "Uni-President 7-Eleven Lions", "Wei Chuan Dragons", "TSG Hawks"
     ]
+  },
+  // === SECCIÓN MOTOR SPORTS ===
+
+  // 1. F1 - Formula 1 (La Reina)
+  {
+    "leagueId": "F1",
+    "leagueName": "Formula 1",
+    "country": "International",
+    "sport": "Motor Sports",
+    "teams": [
+      "Formula 1",
+      "F1",
+      "Grand Prix",
+      "Formula 2",
+      "F2",
+      "Formula 3"
+    ]
+  },
+
+  // 2. FORMULA E (La de tus logs)
+  {
+    "leagueId": "FORMULA_E",
+    "leagueName": "ABB FIA Formula E",
+    "country": "International",
+    "sport": "Motor Sports",
+    "teams": [
+      "Formula E",
+      "E-Prix",
+      "Mexico City E-Prix",
+      "Diriyah E-Prix",
+      "Sao Paulo E-Prix",
+      "Tokyo E-Prix"
+    ]
+  },
+
+  // 3. MOTOGP (Motos)
+  {
+    "leagueId": "MOTOGP",
+    "leagueName": "MotoGP World Championship",
+    "country": "International",
+    "sport": "Motor Sports",
+    "teams": [
+      "MotoGP",
+      "Moto2",
+      "Moto3",
+      "WorldSBK",
+      "Superbike"
+    ]
+  },
+
+  // 4. SUPERCROSS / MOTOCROSS (La de tus logs)
+  {
+    "leagueId": "SUPERCROSS",
+    "leagueName": "AMA Supercross / MXGP",
+    "country": "USA/Intl",
+    "sport": "Motor Sports",
+    "teams": [
+      "Supercross",
+      "AMA Supercross",
+      "Motocross",
+      "MXGP",
+      "Pro Motocross",
+      "Monster Energy Supercross"
+    ]
+  },
+
+  // 5. NASCAR (USA)
+  {
+    "leagueId": "NASCAR",
+    "leagueName": "NASCAR",
+    "country": "USA",
+    "sport": "Motor Sports",
+    "teams": [
+      "NASCAR",
+      "Cup Series",
+      "Xfinity Series",
+      "Daytona 500",
+      "Truck Series"
+    ]
+  },
+
+  // 6. INDYCAR (USA)
+  {
+    "leagueId": "INDYCAR",
+    "leagueName": "IndyCar Series",
+    "country": "USA",
+    "sport": "Motor Sports",
+    "teams": [
+      "IndyCar",
+      "Indy 500",
+      "Indianapolis 500"
+    ]
+  },
+
+  // 7. WRC / RALLY
+  {
+    "leagueId": "WRC",
+    "leagueName": "World Rally Championship",
+    "country": "International",
+    "sport": "Motor Sports",
+    "teams": [
+      "WRC",
+      "Rally",
+      "Dakar Rally",
+      "World RX"
+    ]
+  },
+
+  // 8. WEC (Resistencia)
+  {
+    "leagueId": "WEC",
+    "leagueName": "WEC (Endurance)",
+    "country": "International",
+    "sport": "Motor Sports",
+    "teams": [
+      "WEC",
+      "24 Hours of Le Mans",
+      "Le Mans",
+      "Daytona 24",
+      "IMSA"
+    ]
   }
 ];
 
