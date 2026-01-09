@@ -741,6 +741,130 @@ export default function handler(req, res) {
       "Daytona 24",
       "IMSA"
     ]
+  },
+  // === SECCIÓN FIGHT (COMBATE) ===
+
+  // 1. UFC (La reina de las MMA)
+  {
+    "leagueId": "UFC",
+    "leagueName": "UFC",
+    "country": "International",
+    "sport": "Fight",
+    "teams": [
+      "UFC",
+      "Ultimate Fighting Championship",
+      "Dana White's Contender Series",
+      "The Ultimate Fighter",
+      "UFC Fight Night"
+    ]
+  },
+
+  // 2. OTRAS LIGAS DE MMA (PFL, Bellator y Regionales)
+  {
+    "leagueId": "MMA_LEAGUES",
+    "leagueName": "MMA Organizations",
+    "country": "International",
+    "sport": "Fight",
+    "teams": [
+      "PFL",
+      "Professional Fighters League",
+      "Bellator",
+      "ONE Championship",
+      "Rizin",
+      "Cage Warriors",
+      "KSW",
+      "LFA",
+      "559 FIGHTS", // Estaba en tu log
+      "RAF",        // Estaba en tu log
+      "Oktagon MMA",
+      "Combate Global",
+      "Invicta FC"
+    ]
+  },
+
+  // 3. WWE (Lucha Libre / Wrestling)
+  {
+    "leagueId": "WWE",
+    "leagueName": "WWE",
+    "country": "USA",
+    "sport": "Fight",
+    "teams": [
+      "WWE",
+      "Smackdown",
+      "Friday Night Smackdown",
+      "Raw",
+      "Monday Night Raw",
+      "NXT",
+      "WrestleMania",
+      "Royal Rumble",
+      "SummerSlam",
+      "Survivor Series",
+      "Money in the Bank"
+    ]
+  },
+
+  // 4. AEW (All Elite Wrestling)
+  {
+    "leagueId": "AEW",
+    "leagueName": "All Elite Wrestling",
+    "country": "USA",
+    "sport": "Fight",
+    "teams": [
+      "AEW",
+      "Dynamite",
+      "Rampage",
+      "Collision",
+      "Saturday Night Collision",
+      "All In",
+      "All Out",
+      "Revolution",
+      "Double or Nothing"
+    ]
+  },
+
+  // 5. OTRAS LIGAS DE WRESTLING (TNA, NJPW, México)
+  {
+    "leagueId": "PRO_WRESTLING_OTHER",
+    "leagueName": "Pro Wrestling (Global)",
+    "country": "International",
+    "sport": "Fight",
+    "teams": [
+      "TNA", // Estaba en tu log
+      "Impact Wrestling",
+      "NJPW",
+      "New Japan Pro-Wrestling",
+      "ROH",
+      "Ring of Honor",
+      "AAA",
+      "Lucha Libre AAA",
+      "CMLL",
+      "GCW"
+    ]
+  },
+
+  // 6. BOXEO (Promotoras y Organismos)
+  // Nota: El boxeo es difícil porque a veces solo ponen los nombres de los peleadores.
+  // Aquí ponemos las palabras clave para intentar capturarlos.
+  {
+    "leagueId": "BOXING",
+    "leagueName": "Boxing",
+    "country": "International",
+    "sport": "Fight",
+    "teams": [
+      "Boxing",
+      "Boxeo",
+      "Top Rank",
+      "Matchroom",
+      "Golden Boy",
+      "PBC",
+      "Premier Boxing Champions",
+      "Queensberry",
+      "Title Fight",
+      "WBC",
+      "WBA",
+      "IBF",
+      "WBO"
+    ]
   }
 ];
 
