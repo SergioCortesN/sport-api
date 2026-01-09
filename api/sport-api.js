@@ -410,34 +410,76 @@ export default function handler(req, res) {
   },
 
   // === SECCIÓN TENNIS ===
+  // === CATEGORÍA 1: GRAND SLAMS (Los 4 Grandes) ===
   {
-  "leagueId": "ATP_WTA_INTERNATIONAL",
-  "leagueName": "ATP/WTA International",
-  "country": "International",
-  "sport": "Tennis",
-  "teams": [
-    "Brisbane International",
-    "Auckland Open",
-    "United Cup",
-    "Adelaide International",
-    "Australian Open",
-    "Wimbledon",
-    "Roland Garros",
-    "French Open",
-    "US Open",
-    "Indian Wells",
-    "Miami Open",
-    "Monte Carlo",
-    "Madrid Open",
-    "Rome Masters",
-    "Canadian Open",
-    "Cincinnati",
-    "Shanghai Masters",
-    "Paris Masters",
-    "ATP Finals",
-    "WTA Finals"
-  ]
-}
+    "leagueId": "GRAND_SLAM",
+    "leagueName": "Grand Slam Tennis",
+    "country": "International",
+    "sport": "Tennis",
+    "teams": [
+      "Australian Open",
+      "Roland Garros",
+      "French Open",
+      "Wimbledon",
+      "US Open"
+    ]
+  },
+
+  // === CATEGORÍA 2: MASTERS 1000 & FINALS (Torneos Elite) ===
+  {
+    "leagueId": "ATP_WTA_MASTERS",
+    "leagueName": "ATP/WTA Masters 1000 & Finals",
+    "country": "International",
+    "sport": "Tennis",
+    "teams": [
+      "Indian Wells",
+      "Miami Open",
+      "Monte Carlo",
+      "Madrid Open",
+      "Rome Masters",
+      "Canadian Open",
+      "Cincinnati",
+      "Shanghai Masters",
+      "Paris Masters",
+      "ATP Finals",
+      "WTA Finals"
+    ]
+  },
+
+  // === CATEGORÍA 3: WORLD TOUR (250 & 500 - Torneos Regulares) ===
+  {
+    "leagueId": "ATP_WTA_TOUR",
+    "leagueName": "ATP/WTA World Tour",
+    "country": "International",
+    "sport": "Tennis",
+    "teams": [
+      "Brisbane International",
+      "Auckland Open",
+      "Adelaide International",
+      "Barcelona Open",
+      "Queen's Club",
+      "Halle Open",
+      "Dubai Tennis Championships",
+      "Acapulco",
+      "Basel",
+      "Vienna Open"
+    ]
+  },
+
+  // === CATEGORÍA 4: COPAS POR EQUIPOS ===
+  {
+    "leagueId": "TENNIS_TEAM_CUPS",
+    "leagueName": "National Team Cups",
+    "country": "International",
+    "sport": "Tennis",
+    "teams": [
+      "United Cup",
+      "Davis Cup",
+      "Billie Jean King Cup",
+      "Laver Cup",
+      "Hopman Cup"
+    ]
+  }
 ];
 
   // Respondemos con el JSON y estado 200 (OK)
