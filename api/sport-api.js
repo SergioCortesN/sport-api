@@ -23,7 +23,20 @@ export default function handler(req, res) {
         "Orlando Magic", "Philadelphia 76ers", "Phoenix Suns", "Portland Trail Blazers",
         "Sacramento Kings", "San Antonio Spurs", "Toronto Raptors", "Utah Jazz", "Washington Wizards"
       ]
+    },
+    {
+      "leagueId": "WNBA",
+      "leagueName": "WNBA",
+      "logo": "data:image/webp;base64,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",
+      "country": "USA",
+      "sport": "Basketball",
+      "teams": [
+        "Atlanta Dream", "Chicago Sky", "Connecticut Sun", "Dallas Wings", "Indiana Fever",
+        "Las Vegas Aces", "Los Angeles Sparks", "Minnesota Lynx", "New York Liberty",
+        "Phoenix Mercury", "Seattle Storm", "Washington Mystics", "Golden State Valkyries"  
+      ]
     }
+
   ];
 
   // Respondemos con el JSON y estado 200 (OK)
