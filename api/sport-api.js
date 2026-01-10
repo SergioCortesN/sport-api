@@ -883,29 +883,28 @@ export default function handler(req, res) {
       ]
     },
     // ==========================================
-    // FIGHTING SPORTS
-    // ==========================================
-    // ==========================================
-    // COMBAT SPORTS (MMA, BOXING, WRESTLING)
+    // COMBAT SPORTS (BOXING, MMA, WRESTLING)
     // ==========================================
     {
       "leagueId": "UFC",
-      "leagueName": "UFC / MMA",
+      "leagueName": "MMA / UFC",
       "logo": "",
       "country": "International",
       "sport": "MMA",
-      // Keywords vitales: El título DEBE tener una de estas para entrar aquí
+      // Keywords para atrapar eventos por el título si no reconoce nombres
       "keywords": [
         "UFC", "MMA", "Bellator", "PFL", "Fight Night", "Octagon", 
-        "Mixed Martial Arts", "Artes Marciales Mixtas"
+        "RAF", "Renegade", "Covington", "Rockhold", "Mixed Martial Arts"
       ],
       "teams": [
-        // La organización como "equipo"
-        "UFC", "Ultimate Fighting Championship",
+        "UFC", 
         "Bellator MMA",
-        "PFL", "Professional Fighters League",
+        "PFL",
+        "RAF", "Real Arts of Fighting", // Por el ejemplo RAF 05
         
-        // Peleadores Top (Para asegurar match si vienen como HomeTeam)
+        // Peleadores MMA (Incluyendo los de tu ejemplo y Top Stars)
+        "Colby Covington", "Covington",
+        "Luke Rockhold", "Rockhold",
         "Jon Jones",
         "Conor McGregor",
         "Islam Makhachev",
@@ -918,7 +917,6 @@ export default function handler(req, res) {
         "Dustin Poirier",
         "Justin Gaethje",
         "Tom Aspinall",
-        // Mexicanos destacados
         "Alexa Grasso",
         "Brandon Moreno",
         "Yair Rodriguez"
@@ -930,16 +928,26 @@ export default function handler(req, res) {
       "logo": "",
       "country": "International",
       "sport": "Boxing",
+      // Keywords genéricas de tu feed
       "keywords": [
-        "Boxing", "Boxeo", "Fight", "Pelea", "Title Bout", 
-        "World Title", "Campeonato Mundial", "Main Event"
+        "Boxing", "Boxeo", "Fight", "Pelea", "Main Event", 
+        "Tszyu", "Matias", "Kabayel" // Apellidos clave de carteleras actuales
       ],
       "teams": [
-        // Genéricos
-        "Boxeo", "Boxing", "Matchroom", "Top Rank", "PBC", "Golden Boy",
+        "Boxeo", "Matchroom", "Top Rank", "PBC", "Golden Boy",
         
-        // Boxeadores Estrella (Official Names)
-        "Saul Alvarez", // Canelo
+        // Boxeadores de TUS DATOS (Agregados para que haga match)
+        "Agit Kabayel", "Kabayel",
+        "Damian Knyba", "Knyba",
+        "Subriel Matias", "Matias",
+        "Dalton Smith",
+        "Nikita Tszyu", "Tszyu",
+        "Michael Zerafa", "Zerafa",
+        "Alexis Rocha", "Rocha",
+        "Raul Curiel", "Curiel",
+        
+        // Estrellas Globales
+        "Saul Alvarez", "Canelo",
         "Tyson Fury",
         "Oleksandr Usyk",
         "Naoya Inoue",
@@ -954,7 +962,7 @@ export default function handler(req, res) {
         "Teofimo Lopez",
         "Jaime Munguia",
         "Emanuel Navarrete",
-        "Isaac Cruz" // Pitbull Cruz
+        "Isaac Cruz"
       ]
     },
     {
@@ -964,40 +972,32 @@ export default function handler(req, res) {
       "country": "USA",
       "sport": "Wrestling",
       "keywords": [
-        "WWE", "AEW", "WrestleMania", "Royal Rumble", "SummerSlam", 
-        "Survivor Series", "Money in the Bank", "Raw", "SmackDown", "NXT",
-        "Dynamite", "Collision", "Rampage", "All In", "Double or Nothing"
+        "WWE", "AEW", "Collision", "Dynamite", "Rampage", // Por el ejemplo 'AEW: Saturday Night Collision'
+        "WrestleMania", "Royal Rumble", "SummerSlam", "Raw", "SmackDown", "NXT"
       ],
       "teams": [
-        // Organizaciones
-        "WWE", "World Wrestling Entertainment",
+        "WWE", 
         "AEW", "All Elite Wrestling",
         "TNA Wrestling",
-        "NJPW", "New Japan Pro-Wrestling",
+        "NJPW",
         
-        // Superestrellas actuales (Official Names)
+        // Superestrellas
         "Roman Reigns",
         "Cody Rhodes",
         "Seth Rollins",
         "CM Punk",
-        "Dwayne Johnson", // The Rock
+        "The Rock", "Dwayne Johnson",
         "John Cena",
         "Randy Orton",
         "Rhea Ripley",
         "Becky Lynch",
-        "Bianca Belair",
         "Gunther",
         "Drew McIntyre",
         "Jey Uso",
-        "Jimmy Uso",
-        "Sami Zayn",
-        "Kevin Owens",
-        "LA Knight",
-        "Logan Paul",
         "Kenny Omega",
         "Will Ospreay",
         "Kazuchika Okada",
-        "Mercedes Mone"
+        "MJF"
       ]
     },
     // ==========================================
