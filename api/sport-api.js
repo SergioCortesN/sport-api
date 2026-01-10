@@ -385,6 +385,37 @@ export default function handler(req, res) {
         "Villarreal CF"
       ]
     },
+    {
+      "leagueId": "PREMIER_LEAGUE",
+      "leagueName": "Premier League",
+      "logo": "",
+      "country": "England",
+      "sport": "Football",
+      "keywords": [],
+      "teams": [
+        "Arsenal",
+        "Manchester City",
+        "Chelsea FC",
+        "Liverpool FC",
+        "Tottenham Hotspur",
+        "Manchester United",
+        "Newcastle United",
+        "Nottingham Forest",
+        "Aston Villa",
+        "Brighton & Hove Albion",
+        "Crystal Palace",
+        "Brentford FC",
+        "AFC Bournemouth",
+        "Everton FC",
+        "West Ham United",
+        "Sunderland AFC",
+        "Fulham FC",
+        "Wolverhampton Wanderers",
+        "Leeds United",
+        "Burnley FC"
+      ]
+    },
+
   ];
 
   // Respondemos con el JSON y estado 200 (OK)
