@@ -6,7 +6,7 @@ export default function handler(req, res) {
 
   const leagues = [
     // ==========================================
-    // TORNEOS INTERNACIONALES (PRIORIDAD ALTA)
+    // BASKETBALL TOURNAMENTS
     // ==========================================
     {
       "leagueId": "EURO_LEAGUE",
@@ -224,7 +224,7 @@ export default function handler(req, res) {
       ]
     },
     //=====================================================
-    // Soccer Leagues
+    // FOOTBALL TOURNAMENTS
     //=====================================================
     {
       "leagueId": "UEFA_CHAMPIONS",
@@ -327,6 +327,9 @@ export default function handler(req, res) {
         "Žalgiris Vilnius"
       ]
     },
+    //=====================================================
+    // FOOTBALL LEAGUES
+    //=====================================================
     {
       "leagueId": "LIGA_MX",
       "leagueName": "Liga MX",
@@ -441,6 +444,36 @@ export default function handler(req, res) {
         "FC St. Pauli",
         "1. FC Heidenheim 1846",
         "1. FSV Mainz 05"
+      ]
+    },
+    {
+      "leagueId": "SERIE_A",
+      "leagueName": "Serie A",
+      "logo": "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",
+      "country": "Italy",
+      "sport": "Football",
+      "keywords": [],
+      "teams": [
+        "F.C. Internazionale Milano",
+        "Juventus FC",
+        "AC Milan",
+        "SSC Napoli",
+        "Atalanta BC",
+        "AS Roma",
+        "Como 1907",
+        "Bologna FC 1909",
+        "ACF Fiorentina",
+        "SS Lazio",
+        "Udinese Calcio",
+        "US Sassuolo Calcio",
+        "Parma Calcio 1913",
+        "Torino FC",
+        "Genoa CFC",
+        "Cagliari Calcio",
+        "Pisa Sporting Club",
+        "Hellas Verona FC",
+        "US Lecce",
+        "US Cremonese"
       ]
     },
 
