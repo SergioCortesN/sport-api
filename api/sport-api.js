@@ -77,6 +77,84 @@ export default function handler(req, res) {
       "Valencia Basket"
       ]
     },
+    {
+    "leagueId": "BSL",
+    "leagueName": "Basketbol Süper Ligi",
+    "logo": "data:image/webp;base64,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",
+    "country": "Turkey",
+    "sport": "Basketball",
+    "teams": [
+      "Aliaga Petkim Spor", "Petkim Spor",
+      "Anadolu Efes Istanbul", "Anadolu Efes",
+      "Bahcesehir Koleji",
+      "Besiktas S.J.", "Besiktas",
+      "Bursaspor",
+      "Buyukcekmece",
+      "Esenler Erokspor",
+      "Fenerbahce BEKO", "Fenerbahce",
+      "Galatasaray",
+      "Manisa BBSK",
+      "Merkezefendi",
+      "Mersin BBGSK", "Mersin",
+      "Pinar Karsiyaka", "Karsiyaka",
+      "Tofas Bursa", "Tofas",
+      "Trabzonspor",
+      "Turk Telekom"
+      ]
+    },
+    {
+    "leagueId": "LBA",
+    "leagueName": "Lega Basket Serie A",
+    "logo": "data:image/webp;base64,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",
+    "country": "Italy",
+    "sport": "Basketball",
+    "teams": [
+      "Acqua S. Bernardo Cantù", "Cantù",
+      "Apu Udine", "Udine",
+      "Bertram Derthona", "Tortona",
+      "Dinamo Sassari", "Sassari",
+      "Dolomiti Energia Trento", "Trentino", "Trento",
+      "EA7 Emporio Armani Milan", "EA7 Milano", "Olimpia Milano", "Milano",
+      "Germani Brescia", "Brescia",
+      "GeVi Napoli", "Napoli Basket", "Napoli",
+      "Nutribullet Treviso", "Treviso Basket", "Treviso",
+      "Pallacanestro Trieste", "Trieste",
+      "Openjobmetis Varese", "Varese",
+      "Pall. Trapani", "Trapani Shark", "Trapani",
+      "Umana Reyer Venezia", "Reyer Venezia", "Venezia",
+      "Unahotels Reggio Emilia", "Reggio Emilia",
+      "Vanoli Cremona", "Cremona",
+      "Virtus Segafredo Bologna", "Segafredo Bologna", "Virtus Bologna",
+      // Equipos de Serie A faltantes en tu lista (añadidos por seguridad)
+      "Estra Pistoia", "Pistoia",
+      "Givova Scafati", "Scafati"
+      ]
+    },
+    {
+    "leagueId": "LNB",
+    "leagueName": "Betclic Élite",
+    "logo": "data:image/webp;base64,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",
+    "country": "France",
+    "sport": "Basketball",
+    "teams": [
+      "AS Monaco", "Monaco",
+      "Boulazac", "Boulazac Basket Dordogne",
+      "Bourg-en-Bresse", "JL Bourg", "Bourg",
+      "Elan Chalon", "Chalon",
+      "Cholet Basket", "Cholet",
+      "JDA Dijon", "Dijon",
+      "Gravelines-Dunkerque", "BCM Gravelines-Dunkerque", "Gravelines",
+      "LDLC ASVEL", "ASVEL", "Villeurbanne",
+      "Le Mans", "Le Mans Sarthe",
+      "ESSM Le Portel", "Le Portel",
+      "Limoges CSP", "Limoges",
+      "SLUC Nancy", "Nancy",
+      "Nanterre 92", "Nanterre",
+      "Paris Basketball", "Paris",
+      "Saint-Quentin",
+      "Strasbourg", "SIG Strasbourg", "SIG"
+    ]
+  },
 
   ];
 
