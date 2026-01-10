@@ -771,7 +771,7 @@ export default function handler(req, res) {
       "logo": "",
       "country": "International",
       "sport": "Boxing",
-      "keywords": ["Boxing", "Boxeo", "Fight", "Pelea", "Title Bout", "Main Event"],
+      "keywords": [],
       "teams": [
         "Matchroom", "Top Rank", "PBC", "Golden Boy",
         // Datos de tu ejemplo
