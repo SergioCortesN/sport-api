@@ -50,7 +50,33 @@ export default function handler(req, res) {
         "South Bay Lakers", "Stockton Kings", "Texas Legends", "Westchester Knicks", "Valley Vipers", "Wisconsin Herd", "Windy City Bulls"
       ]
     },
-
+    {
+    "leagueId": "ACB",
+    "leagueName": "Liga Endesa (ACB)",
+    "logo": "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",
+    "country": "Spain",
+    "sport": "Basketball",
+    "teams": [
+      "Baskonia Vitoria-Gasteiz",
+      "Basquet Girona",
+      "BAXI Manresa",
+      "Casademont Zaragoza",
+      "Coviran Granada",
+      "Dreamland Gran Canaria",
+      "FC Barcelona",
+      "Hiopos Lleida",
+      "Joventut Badalona",
+      "La Laguna Tenerife",
+      "MoraBanc Andorra",
+      "Real Madrid",
+      "Rio Breogan",
+      "San Pablo Burgos",
+      "Surne Bilbao",
+      "UCAM Murcia",
+      "Unicaja Malaga",
+      "Valencia Basket"
+      ]
+    },
 
   ];
 
