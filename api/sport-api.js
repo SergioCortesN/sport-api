@@ -314,7 +314,7 @@ export default function handler(req, res) {
         "CD Guadalajara",
         "Pumas UNAM",
         "Pachuca",
-        "León",
+        "León", "Leon",
         "Necaxa",
         "Atletico San Luis",
         "Queretaro",
