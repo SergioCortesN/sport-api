@@ -352,7 +352,7 @@ export default function handler(req, res) {
         "Puebla", "La Franja",
         "Pumas UNAM", "Pumas",
         "Querétaro", "Gallos Blancos",
-        "Santos", "Santos Laguna",
+        "Santos Laguna",
         "Tigres UANL", "Tigres",
         "Tijuana", "Xolos",
         "Toluca", "Diablos Rojos"
