@@ -702,9 +702,11 @@ export default function handler(req, res) {
       ]
     },
     // ==========================================
-    // DEPORTES DE MOTOR (4 CATEGORÍAS FIJAS)
-    // Sport unificado: "Motor Sports"
+    // DEPORTES DE MOTOR (SOLO EVENTOS/TORNEOS)
+    // Sport: "Motor Sports"
     // ==========================================
+
+    // 1. FORMULA 1
     {
       "leagueId": "FORMULA_1",
       "leagueName": "Formula 1",
@@ -713,43 +715,89 @@ export default function handler(req, res) {
       "sport": "Motor Sports",
       "keywords": ["Formula 1", "F1", "Grand Prix", "GP", "Qualifying", "Sprint", "Practice"],
       "teams": [
-        "Formula 1", "F1", "Red Bull", "Mercedes", "Ferrari", "McLaren", "Aston Martin", "Alpine", "Williams", "Haas", "Sauber", "RB",
-        "Max Verstappen", "Checo Perez", "Sergio Perez", "Lewis Hamilton", "Charles Leclerc", "Lando Norris", "Fernando Alonso", "Franco Colapinto"
+        "Formula 1", 
+        "F1", 
+        "Grand Prix", 
+        "GP"
       ]
     },
+
+    // 2. MOTOS & SUPERCROSS (MotoGP, AMA, MX)
     {
-      "leagueId": "MOTOGP",
-      "leagueName": "MotoGP",
+      "leagueId": "MOTO_SUPERCROSS",
+      "leagueName": "MotoGP / Supercross",
       "logo": "",
       "country": "International",
       "sport": "Motor Sports",
-      "keywords": ["MotoGP", "Moto2", "Moto3", "Grand Prix", "GP", "Sprint"],
+      "keywords": [
+        "MotoGP", "Moto2", "Moto3", 
+        "Supercross", "AMA Supercross", "Anaheim", 
+        "Motocross", "MXGP", 
+        "Superbike", "WSBK"
+      ],
       "teams": [
-        "MotoGP", "Ducati", "Pramac", "Aprilia", "KTM", "Yamaha", "Honda",
-        "Pecco Bagnaia", "Jorge Martin", "Marc Marquez", "Pedro Acosta", "Fabio Quartararo"
+        "MotoGP", 
+        "Moto2", 
+        "Moto3", 
+        "Supercross", 
+        "AMA Supercross", 
+        "Motocross", 
+        "MXGP", 
+        "Superbike", 
+        "WSBK"
       ]
     },
-    {
-      "leagueId": "NASCAR_INDY",
-      "leagueName": "NASCAR / IndyCar",
-      "logo": "",
-      "country": "USA",
-      "sport": "Motor Sports",
-      "keywords": ["NASCAR", "Cup Series", "Xfinity", "IndyCar", "Indy 500", "Daytona"],
-      "teams": [
-        "NASCAR", "IndyCar", "Penske", "Ganassi", "Hendrick", "Gibbs",
-        "Pato O'Ward", "Alex Palou", "Daniel Suarez", "Kyle Larson", "Chase Elliott", "Bubba Wallace"
-      ]
-    },
+
+    // 3. FORMULA E
     {
       "leagueId": "FORMULA_E",
       "leagueName": "Formula E",
       "logo": "",
       "country": "International",
       "sport": "Motor Sports",
-      "keywords": ["Formula E", "E-Prix", "ABB FIA"],
+      "keywords": ["Formula E", "E-Prix", "ABB FIA", "Mexico City"],
       "teams": [
-        "Formula E", "Porsche", "Jaguar", "Andretti", "Maserati", "Nissan", "McLaren", "Wehrlein", "Evans", "Cassidy"
+        "Formula E", 
+        "ABB FIA Formula E", 
+        "E-Prix"
+      ]
+    },
+
+    // 4. USA RACING (NASCAR / INDYCAR)
+    {
+      "leagueId": "NASCAR_INDY",
+      "leagueName": "NASCAR / IndyCar",
+      "logo": "",
+      "country": "USA",
+      "sport": "Motor Sports",
+      "keywords": ["NASCAR", "Cup Series", "Xfinity", "Truck Series", "IndyCar", "Indy 500", "Daytona 500"],
+      "teams": [
+        "NASCAR", 
+        "Cup Series", 
+        "Xfinity Series", 
+        "Truck Series", 
+        "IndyCar", 
+        "NTT IndyCar Series", 
+        "Indy 500"
+      ]
+    },
+
+    // 5. RALLY & ENDURANCE (WRC, Dakar, Le Mans)
+    {
+      "leagueId": "RALLY_WEC",
+      "leagueName": "Rally / WEC",
+      "logo": "",
+      "country": "International",
+      "sport": "Motor Sports",
+      "keywords": ["WRC", "Rally", "Dakar", "WEC", "Le Mans", "IMSA", "24 Hours"],
+      "teams": [
+        "WRC", 
+        "World Rally Championship", 
+        "Rally", 
+        "Dakar Rally", 
+        "WEC", 
+        "World Endurance Championship", 
+        "IMSA"
       ]
     },
 
