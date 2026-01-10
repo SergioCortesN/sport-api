@@ -415,6 +415,35 @@ export default function handler(req, res) {
         "Burnley FC"
       ]
     },
+    {
+      "leagueId": "BUNDESLIGA",
+      "leagueName": "Bundesliga",
+      "logo": "",
+      "country": "Germany",
+      "sport": "Football",
+      "keywords": [],
+      "teams": [
+        "FC Bayern München",
+        "Borussia Dortmund",
+        "Bayer 04 Leverkusen",
+        "RB Leipzig",
+        "TSG 1899 Hoffenheim",
+        "VfB Stuttgart",
+        "Eintracht Frankfurt",
+        "1. FC Union Berlin",
+        "SC Freiburg",
+        "SV Werder Bremen",
+        "1. FC Köln",
+        "Borussia Mönchengladbach",
+        "Hamburger SV",
+        "VfL Wolfsburg",
+        "FC Augsburg",
+        "FC St. Pauli",
+        "1. FC Heidenheim 1846",
+        "1. FSV Mainz 05"
+      ]
+    },
+
 
   ];
 
