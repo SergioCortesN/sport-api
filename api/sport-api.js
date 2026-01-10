@@ -703,13 +703,14 @@ export default function handler(req, res) {
     },
     // ==========================================
     // DEPORTES DE MOTOR (4 CATEGORÍAS FIJAS)
+    // Sport unificado: "Motor Sports"
     // ==========================================
     {
       "leagueId": "FORMULA_1",
       "leagueName": "Formula 1",
       "logo": "",
       "country": "International",
-      "sport": "Motorsport",
+      "sport": "Motor Sports",
       "keywords": ["Formula 1", "F1", "Grand Prix", "GP", "Qualifying", "Sprint", "Practice"],
       "teams": [
         "Formula 1", "F1", "Red Bull", "Mercedes", "Ferrari", "McLaren", "Aston Martin", "Alpine", "Williams", "Haas", "Sauber", "RB",
@@ -721,7 +722,7 @@ export default function handler(req, res) {
       "leagueName": "MotoGP",
       "logo": "",
       "country": "International",
-      "sport": "Motorsport",
+      "sport": "Motor Sports",
       "keywords": ["MotoGP", "Moto2", "Moto3", "Grand Prix", "GP", "Sprint"],
       "teams": [
         "MotoGP", "Ducati", "Pramac", "Aprilia", "KTM", "Yamaha", "Honda",
@@ -733,7 +734,7 @@ export default function handler(req, res) {
       "leagueName": "NASCAR / IndyCar",
       "logo": "",
       "country": "USA",
-      "sport": "Motorsport",
+      "sport": "Motor Sports",
       "keywords": ["NASCAR", "Cup Series", "Xfinity", "IndyCar", "Indy 500", "Daytona"],
       "teams": [
         "NASCAR", "IndyCar", "Penske", "Ganassi", "Hendrick", "Gibbs",
@@ -745,7 +746,7 @@ export default function handler(req, res) {
       "leagueName": "Formula E",
       "logo": "",
       "country": "International",
-      "sport": "Motorsport",
+      "sport": "Motor Sports",
       "keywords": ["Formula E", "E-Prix", "ABB FIA"],
       "teams": [
         "Formula E", "Porsche", "Jaguar", "Andretti", "Maserati", "Nissan", "McLaren", "Wehrlein", "Evans", "Cassidy"
@@ -754,15 +755,14 @@ export default function handler(req, res) {
 
     // ==========================================
     // DEPORTES DE COMBATE (3 CATEGORÍAS FIJAS)
-    // Basado en tus logs: "RAF 05", "Agit Kabayel", "AEW Collision"
+    // Sport unificado: "Fight"
     // ==========================================
     {
       "leagueId": "UFC_MMA",
       "leagueName": "UFC / MMA",
       "logo": "",
       "country": "International",
-      "sport": "MMA",
-      // Agregado "RAF", "Renegade" y los apellidos de la cartelera
+      "sport": "Fight",
       "keywords": ["UFC", "MMA", "Bellator", "PFL", "Fight Night", "RAF", "Renegade", "Covington", "Rockhold"],
       "teams": [
         "UFC", "Bellator", "PFL", "RAF", "Renegade",
@@ -776,17 +776,14 @@ export default function handler(req, res) {
       "leagueName": "Boxeo",
       "logo": "",
       "country": "International",
-      "sport": "Boxing",
-      // Agregados apellidos clave de tus logs para que el Title Match funcione
+      "sport": "Fight",
       "keywords": ["Boxing", "Boxeo", "Fight", "Pelea", "Title Bout", "Kabayel", "Tszyu", "Matias", "Rocha"],
       "teams": [
         "Boxeo", "Matchroom", "Top Rank", "PBC", "Golden Boy",
-        // Nombres exactos de tu log
         "Agit Kabayel", "Kabayel", "Damian Knyba", 
         "Subriel Matias", "Matias", "Dalton Smith", 
         "Nikita Tszyu", "Tszyu", "Michael Zerafa", 
         "Alexis Rocha", "Rocha", "Raul Curiel",
-        // Generales
         "Canelo", "Saul Alvarez", "Tyson Fury", "Usyk", "Inoue", "Crawford", "Davis", "Benavidez", "Ryan Garcia", "Pitbull Cruz"
       ]
     },
@@ -796,14 +793,12 @@ export default function handler(req, res) {
       "logo": "",
       "country": "USA",
       "sport": "Fight",
-      // Agregado "Collision" explícitamente
       "keywords": ["WWE", "AEW", "Collision", "Dynamite", "Rampage", "WrestleMania", "Royal Rumble", "SmackDown", "Raw", "NXT"],
       "teams": [
         "WWE", "AEW", "All Elite Wrestling", "TNA", "NJPW",
         "Roman Reigns", "Cody Rhodes", "CM Punk", "The Rock", "Seth Rollins", "Rhea Ripley", "Kenny Omega", "MJF"
       ]
     },
-
     // ==========================================
     // TENIS (DIVIDIDO EN 4)
     // ==========================================
