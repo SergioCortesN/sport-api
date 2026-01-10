@@ -701,20 +701,16 @@ export default function handler(req, res) {
         "Kiwoom Heroes"
       ]
     },
-    // ==========================================
-    // DEPORTES DE MOTOR (DIVIDIDO EN 4)
-    // ==========================================
     {
       "leagueId": "FORMULA_1",
       "leagueName": "Formula 1",
       "logo": "",
       "country": "International",
       "sport": "Motorsport",
-      "keywords": ["Formula 1", "F1", "Grand Prix", "GP", "Qualifying", "Sprint"],
+      "keywords": ["Formula 1", "F1", "Grand Prix", "GP", "Qualifying", "Sprint", "Practice"],
       "teams": [
-        "Formula 1", 
-        "Red Bull Racing", "Mercedes-AMG", "Scuderia Ferrari", "McLaren", "Aston Martin", "Alpine", "Williams", "Haas", "Sauber", "RB",
-        "Max Verstappen", "Sergio Perez", "Lewis Hamilton", "George Russell", "Charles Leclerc", "Carlos Sainz", "Lando Norris", "Oscar Piastri", "Fernando Alonso", "Franco Colapinto"
+        "Formula 1", "Red Bull", "Mercedes", "Ferrari", "McLaren", "Aston Martin",
+        "Max Verstappen", "Checo Perez", "Lewis Hamilton", "Charles Leclerc", "Lando Norris", "Fernando Alonso", "Franco Colapinto"
       ]
     },
     {
@@ -723,23 +719,22 @@ export default function handler(req, res) {
       "logo": "",
       "country": "International",
       "sport": "Motorsport",
-      "keywords": ["MotoGP", "Moto2", "Moto3", "Grand Prix", "GP"],
+      "keywords": ["MotoGP", "Moto2", "Moto3", "Grand Prix", "GP", "Tissot Sprint"],
       "teams": [
-        "MotoGP", 
-        "Ducati Lenovo Team", "Pramac Racing", "Gresini Racing", "Aprilia Racing", "Red Bull KTM", "Yamaha MotoGP", "Repsol Honda", "VR46 Racing Team",
-        "Francesco Bagnaia", "Jorge Martin", "Marc Marquez", "Enea Bastianini", "Pedro Acosta", "Fabio Quartararo"
+        "MotoGP", "Ducati", "Pramac", "Aprilia", "KTM", "Yamaha", "Honda",
+        "Pecco Bagnaia", "Jorge Martin", "Marc Marquez", "Pedro Acosta", "Fabio Quartararo"
       ]
     },
     {
-      "leagueId": "US_RACING",
-      "leagueName": "IndyCar & NASCAR",
+      "leagueId": "NASCAR_INDY",
+      "leagueName": "NASCAR / IndyCar",
       "logo": "",
       "country": "USA",
       "sport": "Motorsport",
-      "keywords": ["IndyCar", "Indy 500", "NASCAR", "Cup Series", "Daytona"],
+      "keywords": ["NASCAR", "Cup Series", "Xfinity", "IndyCar", "Indy 500", "Daytona"],
       "teams": [
-        "IndyCar", "NASCAR", "Team Penske", "Chip Ganassi Racing", "Arrow McLaren", "Andretti Global", "Hendrick Motorsports", "Joe Gibbs Racing",
-        "Pato O'Ward", "Alex Palou", "Scott Dixon", "Josef Newgarden", "Daniel Suarez", "Kyle Larson", "Chase Elliott", "Bubba Wallace"
+        "NASCAR", "IndyCar", "Penske", "Ganassi", "Hendrick", "Gibbs",
+        "Pato O'Ward", "Alex Palou", "Daniel Suarez", "Kyle Larson", "Chase Elliott", "Bubba Wallace"
       ]
     },
     {
@@ -750,53 +745,54 @@ export default function handler(req, res) {
       "sport": "Motorsport",
       "keywords": ["Formula E", "E-Prix", "ABB FIA"],
       "teams": [
-        "Formula E", "Porsche Formula E", "Jaguar TCS Racing", "Andretti Formula E", "DS Penske", "Maserati MSG", "Nissan Formula E", "McLaren Formula E",
-        "Pascal Wehrlein", "Mitch Evans", "Nick Cassidy", "Antonio Felix da Costa"
+        "Formula E", "Porsche", "Jaguar", "Andretti", "Maserati", "Nissan", "McLaren"
       ]
     },
 
-    // ==========================================
-    // DEPORTES DE COMBATE (DIVIDIDO EN 3)
-    // ==========================================
     {
       "leagueId": "UFC_MMA",
       "leagueName": "UFC / MMA",
       "logo": "",
       "country": "International",
       "sport": "MMA",
-      "keywords": ["UFC", "MMA", "Bellator", "PFL", "Fight Night", "Octagon", "RAF"],
+      "keywords": ["UFC", "MMA", "Bellator", "PFL", "Fight Night", "RAF", "Renegade", "Octagon"],
       "teams": [
         "UFC", "Bellator", "PFL", "RAF",
-        "Jon Jones", "Conor McGregor", "Islam Makhachev", "Alex Pereira", "Ilia Topuria", "Sean O'Malley", "Alexander Volkanovski", "Max Holloway", 
-        "Charles Oliveira", "Dustin Poirier", "Justin Gaethje", "Tom Aspinall", "Colby Covington", "Luke Rockhold",
-        "Alexa Grasso", "Brandon Moreno", "Yair Rodriguez"
+        // Datos de tu ejemplo
+        "Colby Covington", "Covington", 
+        "Luke Rockhold", "Rockhold",
+        // Estrellas
+        "Jon Jones", "Conor McGregor", "Ilia Topuria", "Sean O'Malley", "Alex Pereira", "Alexa Grasso", "Brandon Moreno", "Yair Rodriguez"
       ]
     },
     {
       "leagueId": "BOXING",
-      "leagueName": "Boxeo Internacional",
+      "leagueName": "Boxeo",
       "logo": "",
       "country": "International",
       "sport": "Boxing",
-      "keywords": ["Boxing", "Boxeo", "Fight", "Pelea", "Main Event", "Title Bout"],
+      "keywords": ["Boxing", "Boxeo", "Fight", "Pelea", "Title Bout", "Main Event"],
       "teams": [
-        "Boxeo", "Matchroom", "Top Rank", "PBC", "Golden Boy",
-        "Saul Alvarez", "Canelo", "Tyson Fury", "Oleksandr Usyk", "Naoya Inoue", "Terence Crawford", "Gervonta Davis", "Dmitry Bivol", "Artur Beterbiev", 
-        "David Benavidez", "Devin Haney", "Shakur Stevenson", "Ryan Garcia", "Isaac Cruz", "Jaime Munguia",
-        "Agit Kabayel", "Damian Knyba", "Subriel Matias", "Dalton Smith", "Nikita Tszyu", "Michael Zerafa", "Alexis Rocha", "Raul Curiel"
+        "Matchroom", "Top Rank", "PBC", "Golden Boy",
+        // Datos de tu ejemplo
+        "Agit Kabayel", "Kabayel", "Damian Knyba", 
+        "Subriel Matias", "Matias", "Dalton Smith", 
+        "Nikita Tszyu", "Tszyu", "Michael Zerafa", 
+        "Alexis Rocha", "Raul Curiel",
+        // Estrellas
+        "Canelo", "Saul Alvarez", "Tyson Fury", "Usyk", "Inoue", "Crawford", "Davis", "Benavidez", "Ryan Garcia", "Pitbull Cruz"
       ]
     },
     {
-      "leagueId": "PRO_WRESTLING",
+      "leagueId": "WRESTLING",
       "leagueName": "Wrestling (WWE/AEW)",
       "logo": "",
       "country": "USA",
       "sport": "Wrestling",
-      "keywords": ["WWE", "AEW", "WrestleMania", "Royal Rumble", "SummerSlam", "Raw", "SmackDown", "NXT", "Collision", "Dynamite", "Rampage"],
+      "keywords": ["WWE", "AEW", "Collision", "Dynamite", "Rampage", "WrestleMania", "Royal Rumble", "SmackDown", "Raw", "NXT"],
       "teams": [
         "WWE", "AEW", "TNA", "NJPW",
-        "Roman Reigns", "Cody Rhodes", "Seth Rollins", "CM Punk", "The Rock", "John Cena", "Randy Orton", "Rhea Ripley", "Becky Lynch", 
-        "Gunther", "Drew McIntyre", "Jey Uso", "Kenny Omega", "Will Ospreay", "MJF", "Kazuchika Okada"
+        "Roman Reigns", "Cody Rhodes", "CM Punk", "The Rock", "Seth Rollins", "Rhea Ripley", "Kenny Omega", "MJF"
       ]
     },
 
