@@ -441,7 +441,641 @@ export default function handler(req, res) {
         "Pisa"
       ]
     },
+//=========================================
+//American Football Leagues
+//=========================================
+// ==========================================
+    // AMERICAN FOOTBALL
+    // ==========================================
+    {
+      "leagueId": "NFL",
+      "leagueName": "NFL",
+      "logo": "",
+      "country": "USA",
+      "sport": "American Football",
+      "keywords": [],
+      "teams": [
+        "Arizona Cardinals",
+        "Atlanta Falcons",
+        "Baltimore Ravens",
+        "Buffalo Bills",
+        "Carolina Panthers",
+        "Chicago Bears",
+        "Cincinnati Bengals",
+        "Cleveland Browns",
+        "Dallas Cowboys",
+        "Denver Broncos",
+        "Detroit Lions",
+        "Green Bay Packers",
+        "Houston Texans",
+        "Indianapolis Colts",
+        "Jacksonville Jaguars",
+        "Kansas City Chiefs",
+        "Las Vegas Raiders",
+        "Los Angeles Chargers",
+        "Los Angeles Rams",
+        "Miami Dolphins",
+        "Minnesota Vikings",
+        "New England Patriots",
+        "New Orleans Saints",
+        "New York Giants",
+        "New York Jets",
+        "Philadelphia Eagles",
+        "Pittsburgh Steelers",
+        "San Francisco 49ers",
+        "Seattle Seahawks",
+        "Tampa Bay Buccaneers",
+        "Tennessee Titans",
+        "Washington Commanders"
+      ]
+    },
+    {
+      "leagueId": "NCAA_FB",
+      "leagueName": "NCAA College Football",
+      "logo": "",
+      "country": "USA",
+      "sport": "American Football",
+      "keywords": ["NCAA", "College Football", "CFB", "Bowl"],
+      "teams": [
+        "Alabama Crimson Tide", "Alabama",
+        "Georgia Bulldogs", "Georgia",
+        "Michigan Wolverines", "Michigan",
+        "Ohio State Buckeyes", "Ohio State",
+        "Texas Longhorns", "Texas",
+        "Florida State Seminoles", "FSU",
+        "Oregon Ducks", "Oregon",
+        "Washington Huskies", "Washington",
+        "LSU Tigers", "LSU",
+        "Notre Dame Fighting Irish", "Notre Dame",
+        "Clemson Tigers", "Clemson",
+        "Tennessee Volunteers", "Tennessee",
+        "Penn State Nittany Lions", "Penn State",
+        "Oklahoma Sooners", "Oklahoma",
+        "USC Trojans", "USC",
+        "Ole Miss Rebels", "Ole Miss",
+        "Missouri Tigers", "Missouri",
+        "Miami Hurricanes", "Miami FL",
+        "Florida Gators", "Florida",
+        "Auburn Tigers", "Auburn",
+        "Texas A&M Aggies", "Texas A&M",
+        "Colorado Buffaloes", "Colorado"
+      ]
+    },
+    // ==========================================
+    // BASEBALL
+    // ==========================================
+    // ==========================================
+    // BASEBALL - TORNEOS INTERNACIONALES (PRIORIDAD ALTA)
+    // ==========================================
+    {
+      "leagueId": "WBC",
+      "leagueName": "World Baseball Classic",
+      "logo": "",
+      "country": "World",
+      "sport": "Baseball",
+      "keywords": ["WBC", "World Baseball Classic", "Clásico Mundial"],
+      "teams": [
+        "Team USA", "United States",
+        "Team Mexico", "Mexico",
+        "Team Japan", "Japan", "Samurai Japan",
+        "Team Dominican Republic", "Dominicana",
+        "Team Puerto Rico", "Puerto Rico",
+        "Team Venezuela", "Venezuela",
+        "Team Cuba", "Cuba",
+        "Team South Korea", "Korea",
+        "Team Netherlands", "Netherlands",
+        "Team Canada", "Canada"
+      ]
+    },
+    {
+      "leagueId": "CARIBBEAN_SERIES",
+      "leagueName": "Serie del Caribe",
+      "logo": "",
+      "country": "International",
+      "sport": "Baseball",
+      "keywords": ["Serie del Caribe", "Caribbean Series"],
+      "teams": [
+        // Aquí suelen jugar los campeones, pero ponemos los países/equipos base
+        "Tigres del Licey",
+        "Águilas Cibaeñas",
+        "Criollos de Caguas",
+        "Naranjeros de Hermosillo",
+        "Tiburones de La Guaira",
+        "Federales de Chiriquí",
+        "Curaçao Suns"
+      ]
+    },
 
+    // ==========================================
+    // LIGAS NACIONALES (BASEBALL)
+    // ==========================================
+    {
+      "leagueId": "MLB",
+      "leagueName": "MLB",
+      "logo": "",
+      "country": "USA",
+      "sport": "Baseball",
+      "keywords": [],
+      "teams": [
+        "Arizona Diamondbacks",
+        "Atlanta Braves",
+        "Baltimore Orioles",
+        "Boston Red Sox",
+        "Chicago White Sox",
+        "Chicago Cubs",
+        "Cincinnati Reds",
+        "Cleveland Guardians",
+        "Colorado Rockies",
+        "Detroit Tigers",
+        "Houston Astros",
+        "Kansas City Royals",
+        "Los Angeles Angels",
+        "Los Angeles Dodgers",
+        "Miami Marlins",
+        "Milwaukee Brewers",
+        "Minnesota Twins",
+        "New York Yankees",
+        "New York Mets",
+        "Oakland Athletics",
+        "Philadelphia Phillies",
+        "Pittsburgh Pirates",
+        "San Diego Padres",
+        "San Francisco Giants",
+        "Seattle Mariners",
+        "St. Louis Cardinals",
+        "Tampa Bay Rays",
+        "Texas Rangers",
+        "Toronto Blue Jays",
+        "Washington Nationals"
+      ]
+    },
+    {
+      "leagueId": "LMB",
+      "leagueName": "Liga Mexicana de Beisbol",
+      "logo": "",
+      "country": "Mexico",
+      "sport": "Baseball",
+      "keywords": ["LMB", "Liga Mexicana"],
+      "teams": [
+        "Diablos Rojos del México",
+        "Tigres de Quintana Roo",
+        "Sultanes de Monterrey",
+        "Toros de Tijuana",
+        "Leones de Yucatán",
+        "Olmecas de Tabasco",
+        "El Águila de Veracruz",
+        "Pericos de Puebla",
+        "Guerreros de Oaxaca",
+        "Saraperos de Saltillo",
+        "Acereros de Monclova",
+        "Tecolotes de los Dos Laredos",
+        "Algodoneros de Unión Laguna",
+        "Rieleros de Aguascalientes",
+        "Bravos de León",
+        "Piratas de Campeche",
+        "Caliente de Durango",
+        "Charros de Jalisco",
+        "Conspiradores de Querétaro",
+        "Dorados de Chihuahua"
+      ]
+    },
+    {
+      "leagueId": "LMP",
+      "leagueName": "Liga Mexicana del Pacífico",
+      "logo": "",
+      "country": "Mexico",
+      "sport": "Baseball",
+      "keywords": ["LMP", "Liga del Pacifico", "Arco"],
+      "teams": [
+        "Águilas de Mexicali",
+        "Naranjeros de Hermosillo",
+        "Yaquis de Obregón",
+        "Mayos de Navojoa",
+        "Cañeros de Los Mochis",
+        "Algodoneros de Guasave",
+        "Tomateros de Culiacán",
+        "Venados de Mazatlán",
+        "Charros de Jalisco",
+        "Sultanes de Monterrey" 
+      ]
+    },
+    {
+      "leagueId": "NPB",
+      "leagueName": "Nippon Professional Baseball",
+      "logo": "",
+      "country": "Japan",
+      "sport": "Baseball",
+      "keywords": ["NPB", "Japan Baseball"],
+      "teams": [
+        "Yomiuri Giants",
+        "Hanshin Tigers",
+        "Yokohama DeNA BayStars",
+        "Hiroshima Toyo Carp",
+        "Chunichi Dragons",
+        "Tokyo Yakult Swallows",
+        "Fukuoka SoftBank Hawks",
+        "Chiba Lotte Marines",
+        "Saitama Seibu Lions",
+        "Tohoku Rakuten Golden Eagles",
+        "Hokkaido Nippon-Ham Fighters",
+        "Orix Buffaloes"
+      ]
+    },
+    {
+      "leagueId": "KBO",
+      "leagueName": "KBO League",
+      "logo": "",
+      "country": "South Korea",
+      "sport": "Baseball",
+      "keywords": ["KBO", "Korean Baseball"],
+      "teams": [
+        "LG Twins",
+        "KT Wiz",
+        "SSG Landers",
+        "NC Dinos",
+        "Doosan Bears",
+        "KIA Tigers",
+        "Lotte Giants",
+        "Samsung Lions",
+        "Hanwha Eagles",
+        "Kiwoom Heroes"
+      ]
+    },
+    // ==========================================
+    // MOTORSPORTS
+    // ==========================================
+    // ==========================================
+    // MOTORSPORTS
+    // ==========================================
+    {
+      "leagueId": "FORMULA_1",
+      "leagueName": "Formula 1",
+      "logo": "",
+      "country": "International",
+      "sport": "Motorsport",
+      // Keywords vitales para filtrar por título (matchTitle)
+      "keywords": [
+        "Formula 1", "F1", "Grand Prix", "Gran Premio", "Qualifying", 
+        "Clasificación", "Practice", "Práctica", "Sprint", "GP"
+      ],
+      "teams": [
+        // Incluimos la propia categoría porque a veces homeTeam = "Formula 1"
+        "Formula 1", "F1",
+        
+        // Escuderías
+        "Oracle Red Bull Racing",
+        "Mercedes-AMG PETRONAS Formula One Team",
+        "Scuderia Ferrari HP",
+        "McLaren Formula 1 Team",
+        "Aston Martin Aramco Formula One Team",
+        "BWT Alpine F1 Team",
+        "Williams Racing",
+        "Visa Cash App RB Formula One Team",
+        "Stake F1 Team Kick Sauber",
+        "MoneyGram Haas F1 Team",
+
+        // Pilotos (Nombres oficiales)
+        "Max Verstappen",
+        "Sergio Perez",
+        "Lewis Hamilton",
+        "George Russell",
+        "Charles Leclerc",
+        "Carlos Sainz",
+        "Lando Norris",
+        "Oscar Piastri",
+        "Fernando Alonso",
+        "Lance Stroll",
+        "Pierre Gasly",
+        "Esteban Ocon",
+        "Alexander Albon",
+        "Franco Colapinto",
+        "Yuki Tsunoda",
+        "Liam Lawson",
+        "Valtteri Bottas",
+        "Guanyu Zhou",
+        "Nico Hulkenberg",
+        "Kevin Magnussen"
+      ]
+    },
+    {
+      "leagueId": "MOTOGP",
+      "leagueName": "MotoGP",
+      "logo": "",
+      "country": "International",
+      "sport": "Motorsport",
+      "keywords": ["MotoGP", "Moto2", "Moto3", "Grand Prix", "Gran Premio", "GP", "Tissot Sprint"],
+      "teams": [
+        "MotoGP",
+        "Ducati Lenovo Team",
+        "Prima Pramac Racing",
+        "Gresini Racing MotoGP",
+        "Aprilia Racing",
+        "Red Bull KTM Factory Racing",
+        "Monster Energy Yamaha MotoGP Team",
+        "Repsol Honda Team",
+        "LCR Honda",
+        "Trackhouse Racing",
+        "Pertamina Enduro VR46 Racing Team",
+        
+        // Pilotos
+        "Francesco Bagnaia",
+        "Jorge Martin",
+        "Marc Marquez",
+        "Enea Bastianini",
+        "Pedro Acosta",
+        "Maverick Viñales",
+        "Aleix Espargaro",
+        "Fabio Quartararo",
+        "Brad Binder",
+        "Jack Miller"
+      ]
+    },
+    {
+      "leagueId": "INDYCAR",
+      "leagueName": "IndyCar Series",
+      "logo": "",
+      "country": "USA",
+      "sport": "Motorsport",
+      "keywords": ["IndyCar", "Indy 500", "Indianapolis 500", "Grand Prix"],
+      "teams": [
+        "IndyCar",
+        "NTT IndyCar Series",
+        "Team Penske",
+        "Chip Ganassi Racing",
+        "Arrow McLaren",
+        "Andretti Global",
+        "Rahal Letterman Lanigan Racing",
+        "Ed Carpenter Racing",
+        "Meyer Shank Racing",
+        "Juncos Hollinger Racing",
+        
+        // Pilotos
+        "Patricio O'Ward",
+        "Alex Palou",
+        "Scott Dixon",
+        "Josef Newgarden",
+        "Colton Herta",
+        "Will Power",
+        "Scott McLaughlin",
+        "Marcus Ericsson",
+        "Romain Grosjean",
+        "Agustin Canapino"
+      ]
+    },
+    {
+      "leagueId": "NASCAR",
+      "leagueName": "NASCAR Cup Series",
+      "logo": "",
+      "country": "USA",
+      "sport": "Motorsport",
+      "keywords": ["NASCAR", "Cup Series", "Daytona 500", "Xfinity"],
+      "teams": [
+        "NASCAR",
+        "Hendrick Motorsports",
+        "Joe Gibbs Racing",
+        "Team Penske",
+        "Stewart-Haas Racing",
+        "Trackhouse Racing",
+        "23XI Racing",
+        "RFK Racing",
+        "Richard Childress Racing",
+        
+        // Pilotos
+        "Daniel Suarez",
+        "Kyle Larson",
+        "Chase Elliott",
+        "Denny Hamlin",
+        "Ryan Blaney",
+        "Joey Logano",
+        "William Byron",
+        "Christopher Bell",
+        "Tyler Reddick",
+        "Bubba Wallace"
+      ]
+    },
+    {
+      "leagueId": "FORMULA_E",
+      "leagueName": "Formula E",
+      "logo": "",
+      "country": "International",
+      "sport": "Motorsport",
+      "keywords": ["Formula E", "E-Prix", "ABB FIA Formula E"],
+      "teams": [
+        "Formula E",
+        "TAG Heuer Porsche Formula E Team",
+        "Jaguar TCS Racing",
+        "Andretti Formula E",
+        "DS Penske",
+        "Maserati MSG Racing",
+        "Nissan Formula E Team",
+        "NEOM McLaren Formula E Team",
+        "Envision Racing",
+        "Mahindra Racing",
+        "Lola Yamaha ABT",
+        
+        // Pilotos
+        "Pascal Wehrlein",
+        "Mitch Evans",
+        "Nick Cassidy",
+        "Antonio Felix da Costa",
+        "Jean-Eric Vergne",
+        "Stoffel Vandoorne"
+      ]
+    },
+    // ==========================================
+    // FIGHTING SPORTS
+    // ==========================================
+    // ==========================================
+    // COMBAT SPORTS (MMA, BOXING, WRESTLING)
+    // ==========================================
+    {
+      "leagueId": "UFC",
+      "leagueName": "UFC / MMA",
+      "logo": "",
+      "country": "International",
+      "sport": "MMA",
+      // Keywords vitales: El título DEBE tener una de estas para entrar aquí
+      "keywords": [
+        "UFC", "MMA", "Bellator", "PFL", "Fight Night", "Octagon", 
+        "Mixed Martial Arts", "Artes Marciales Mixtas"
+      ],
+      "teams": [
+        // La organización como "equipo"
+        "UFC", "Ultimate Fighting Championship",
+        "Bellator MMA",
+        "PFL", "Professional Fighters League",
+        
+        // Peleadores Top (Para asegurar match si vienen como HomeTeam)
+        "Jon Jones",
+        "Conor McGregor",
+        "Islam Makhachev",
+        "Alex Pereira",
+        "Ilia Topuria",
+        "Sean O'Malley",
+        "Alexander Volkanovski",
+        "Max Holloway",
+        "Charles Oliveira",
+        "Dustin Poirier",
+        "Justin Gaethje",
+        "Tom Aspinall",
+        // Mexicanos destacados
+        "Alexa Grasso",
+        "Brandon Moreno",
+        "Yair Rodriguez"
+      ]
+    },
+    {
+      "leagueId": "BOXING",
+      "leagueName": "Boxeo Internacional",
+      "logo": "",
+      "country": "International",
+      "sport": "Boxing",
+      "keywords": [
+        "Boxing", "Boxeo", "Fight", "Pelea", "Title Bout", 
+        "World Title", "Campeonato Mundial", "Main Event"
+      ],
+      "teams": [
+        // Genéricos
+        "Boxeo", "Boxing", "Matchroom", "Top Rank", "PBC", "Golden Boy",
+        
+        // Boxeadores Estrella (Official Names)
+        "Saul Alvarez", // Canelo
+        "Tyson Fury",
+        "Oleksandr Usyk",
+        "Naoya Inoue",
+        "Terence Crawford",
+        "Gervonta Davis",
+        "Dmitry Bivol",
+        "Artur Beterbiev",
+        "David Benavidez",
+        "Devin Haney",
+        "Shakur Stevenson",
+        "Ryan Garcia",
+        "Teofimo Lopez",
+        "Jaime Munguia",
+        "Emanuel Navarrete",
+        "Isaac Cruz" // Pitbull Cruz
+      ]
+    },
+    {
+      "leagueId": "WWE",
+      "leagueName": "Pro Wrestling (WWE/AEW)",
+      "logo": "",
+      "country": "USA",
+      "sport": "Wrestling",
+      "keywords": [
+        "WWE", "AEW", "WrestleMania", "Royal Rumble", "SummerSlam", 
+        "Survivor Series", "Money in the Bank", "Raw", "SmackDown", "NXT",
+        "Dynamite", "Collision", "Rampage", "All In", "Double or Nothing"
+      ],
+      "teams": [
+        // Organizaciones
+        "WWE", "World Wrestling Entertainment",
+        "AEW", "All Elite Wrestling",
+        "TNA Wrestling",
+        "NJPW", "New Japan Pro-Wrestling",
+        
+        // Superestrellas actuales (Official Names)
+        "Roman Reigns",
+        "Cody Rhodes",
+        "Seth Rollins",
+        "CM Punk",
+        "Dwayne Johnson", // The Rock
+        "John Cena",
+        "Randy Orton",
+        "Rhea Ripley",
+        "Becky Lynch",
+        "Bianca Belair",
+        "Gunther",
+        "Drew McIntyre",
+        "Jey Uso",
+        "Jimmy Uso",
+        "Sami Zayn",
+        "Kevin Owens",
+        "LA Knight",
+        "Logan Paul",
+        "Kenny Omega",
+        "Will Ospreay",
+        "Kazuchika Okada",
+        "Mercedes Mone"
+      ]
+    },
+    // ==========================================
+    // TENNIS (ATP / WTA / GRAND SLAMS)
+    // ==========================================
+    {
+      "leagueId": "TENNIS_GLOBAL",
+      "leagueName": "Tennis (ATP/WTA)",
+      "logo": "",
+      "country": "International",
+      "sport": "Tennis",
+      "keywords": [
+        "Tennis", "Tenis", "ATP", "WTA", "Grand Slam",
+        "Australian Open", "Roland Garros", "French Open", "Wimbledon", "US Open",
+        "Open", "Masters 1000", "Finals", "Cup", "International", 
+        "Auckland Open", "Brisbane International", "Adelaide International", "United Cup"
+      ],
+      "teams": [
+        // Nombres de Torneos (Actúan como 'HomeTeam' en muchos feeds)
+        "Australian Open",
+        "Roland Garros",
+        "French Open",
+        "Wimbledon",
+        "US Open",
+        "United Cup",
+        "Brisbane International",
+        "Auckland Open",
+        "Adelaide International",
+        "Davis Cup",
+        "Laver Cup",
+        "Billie Jean King Cup",
+        "Indian Wells",
+        "Miami Open",
+        "Monte-Carlo Masters",
+        "Madrid Open",
+        "Italian Open",
+        "Canadian Open",
+        "Cincinnati Open",
+        "Shanghai Masters",
+        "Paris Masters",
+
+        // Top Players ATP (Official Names)
+        "Novak Djokovic",
+        "Carlos Alcaraz",
+        "Jannik Sinner",
+        "Daniil Medvedev",
+        "Alexander Zverev",
+        "Andrey Rublev",
+        "Holger Rune",
+        "Hubert Hurkacz",
+        "Stefanos Tsitsipas",
+        "Alex de Minaur",
+        "Casper Ruud",
+        "Taylor Fritz",
+        "Rafael Nadal",
+        "Grigor Dimitrov",
+        "Ben Shelton",
+        "Tommy Paul",
+        "Frances Tiafoe",
+
+        // Top Players WTA (Official Names)
+        "Iga Swiatek",
+        "Aryna Sabalenka",
+        "Coco Gauff",
+        "Elena Rybakina",
+        "Jessica Pegula",
+        "Ons Jabeur",
+        "Qinwen Zheng",
+        "Marketa Vondrousova",
+        "Maria Sakkari",
+        "Karolina Muchova",
+        "Barbora Krejcikova",
+        "Jelena Ostapenko",
+        "Daria Kasatkina",
+        "Beatriz Haddad Maia",
+        "Jasmine Paolini"
+      ]
+    }
 
   ];
 
