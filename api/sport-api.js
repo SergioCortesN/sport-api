@@ -702,10 +702,7 @@ export default function handler(req, res) {
       ]
     },
     // ==========================================
-    // MOTORSPORTS
-    // ==========================================
-    // ==========================================
-    // MOTORSPORTS
+    // DEPORTES DE MOTOR (DIVIDIDO EN 4)
     // ==========================================
     {
       "leagueId": "FORMULA_1",
@@ -713,48 +710,11 @@ export default function handler(req, res) {
       "logo": "",
       "country": "International",
       "sport": "Motorsport",
-      // Keywords vitales para filtrar por título (matchTitle)
-      "keywords": [
-        "Formula 1", "F1", "Grand Prix", "Gran Premio", "Qualifying", 
-        "Clasificación", "Practice", "Práctica", "Sprint", "GP"
-      ],
+      "keywords": ["Formula 1", "F1", "Grand Prix", "GP", "Qualifying", "Sprint"],
       "teams": [
-        // Incluimos la propia categoría porque a veces homeTeam = "Formula 1"
-        "Formula 1", "F1",
-        
-        // Escuderías
-        "Oracle Red Bull Racing",
-        "Mercedes-AMG PETRONAS Formula One Team",
-        "Scuderia Ferrari HP",
-        "McLaren Formula 1 Team",
-        "Aston Martin Aramco Formula One Team",
-        "BWT Alpine F1 Team",
-        "Williams Racing",
-        "Visa Cash App RB Formula One Team",
-        "Stake F1 Team Kick Sauber",
-        "MoneyGram Haas F1 Team",
-
-        // Pilotos (Nombres oficiales)
-        "Max Verstappen",
-        "Sergio Perez",
-        "Lewis Hamilton",
-        "George Russell",
-        "Charles Leclerc",
-        "Carlos Sainz",
-        "Lando Norris",
-        "Oscar Piastri",
-        "Fernando Alonso",
-        "Lance Stroll",
-        "Pierre Gasly",
-        "Esteban Ocon",
-        "Alexander Albon",
-        "Franco Colapinto",
-        "Yuki Tsunoda",
-        "Liam Lawson",
-        "Valtteri Bottas",
-        "Guanyu Zhou",
-        "Nico Hulkenberg",
-        "Kevin Magnussen"
+        "Formula 1", 
+        "Red Bull Racing", "Mercedes-AMG", "Scuderia Ferrari", "McLaren", "Aston Martin", "Alpine", "Williams", "Haas", "Sauber", "RB",
+        "Max Verstappen", "Sergio Perez", "Lewis Hamilton", "George Russell", "Charles Leclerc", "Carlos Sainz", "Lando Norris", "Oscar Piastri", "Fernando Alonso", "Franco Colapinto"
       ]
     },
     {
@@ -763,94 +723,23 @@ export default function handler(req, res) {
       "logo": "",
       "country": "International",
       "sport": "Motorsport",
-      "keywords": ["MotoGP", "Moto2", "Moto3", "Grand Prix", "Gran Premio", "GP", "Tissot Sprint"],
+      "keywords": ["MotoGP", "Moto2", "Moto3", "Grand Prix", "GP"],
       "teams": [
-        "MotoGP",
-        "Ducati Lenovo Team",
-        "Prima Pramac Racing",
-        "Gresini Racing MotoGP",
-        "Aprilia Racing",
-        "Red Bull KTM Factory Racing",
-        "Monster Energy Yamaha MotoGP Team",
-        "Repsol Honda Team",
-        "LCR Honda",
-        "Trackhouse Racing",
-        "Pertamina Enduro VR46 Racing Team",
-        
-        // Pilotos
-        "Francesco Bagnaia",
-        "Jorge Martin",
-        "Marc Marquez",
-        "Enea Bastianini",
-        "Pedro Acosta",
-        "Maverick Viñales",
-        "Aleix Espargaro",
-        "Fabio Quartararo",
-        "Brad Binder",
-        "Jack Miller"
+        "MotoGP", 
+        "Ducati Lenovo Team", "Pramac Racing", "Gresini Racing", "Aprilia Racing", "Red Bull KTM", "Yamaha MotoGP", "Repsol Honda", "VR46 Racing Team",
+        "Francesco Bagnaia", "Jorge Martin", "Marc Marquez", "Enea Bastianini", "Pedro Acosta", "Fabio Quartararo"
       ]
     },
     {
-      "leagueId": "INDYCAR",
-      "leagueName": "IndyCar Series",
+      "leagueId": "US_RACING",
+      "leagueName": "IndyCar & NASCAR",
       "logo": "",
       "country": "USA",
       "sport": "Motorsport",
-      "keywords": ["IndyCar", "Indy 500", "Indianapolis 500", "Grand Prix"],
+      "keywords": ["IndyCar", "Indy 500", "NASCAR", "Cup Series", "Daytona"],
       "teams": [
-        "IndyCar",
-        "NTT IndyCar Series",
-        "Team Penske",
-        "Chip Ganassi Racing",
-        "Arrow McLaren",
-        "Andretti Global",
-        "Rahal Letterman Lanigan Racing",
-        "Ed Carpenter Racing",
-        "Meyer Shank Racing",
-        "Juncos Hollinger Racing",
-        
-        // Pilotos
-        "Patricio O'Ward",
-        "Alex Palou",
-        "Scott Dixon",
-        "Josef Newgarden",
-        "Colton Herta",
-        "Will Power",
-        "Scott McLaughlin",
-        "Marcus Ericsson",
-        "Romain Grosjean",
-        "Agustin Canapino"
-      ]
-    },
-    {
-      "leagueId": "NASCAR",
-      "leagueName": "NASCAR Cup Series",
-      "logo": "",
-      "country": "USA",
-      "sport": "Motorsport",
-      "keywords": ["NASCAR", "Cup Series", "Daytona 500", "Xfinity"],
-      "teams": [
-        "NASCAR",
-        "Hendrick Motorsports",
-        "Joe Gibbs Racing",
-        "Team Penske",
-        "Stewart-Haas Racing",
-        "Trackhouse Racing",
-        "23XI Racing",
-        "RFK Racing",
-        "Richard Childress Racing",
-        
-        // Pilotos
-        "Daniel Suarez",
-        "Kyle Larson",
-        "Chase Elliott",
-        "Denny Hamlin",
-        "Ryan Blaney",
-        "Joey Logano",
-        "William Byron",
-        "Christopher Bell",
-        "Tyler Reddick",
-        "Bubba Wallace"
+        "IndyCar", "NASCAR", "Team Penske", "Chip Ganassi Racing", "Arrow McLaren", "Andretti Global", "Hendrick Motorsports", "Joe Gibbs Racing",
+        "Pato O'Ward", "Alex Palou", "Scott Dixon", "Josef Newgarden", "Daniel Suarez", "Kyle Larson", "Chase Elliott", "Bubba Wallace"
       ]
     },
     {
@@ -859,67 +748,28 @@ export default function handler(req, res) {
       "logo": "",
       "country": "International",
       "sport": "Motorsport",
-      "keywords": ["Formula E", "E-Prix", "ABB FIA Formula E"],
+      "keywords": ["Formula E", "E-Prix", "ABB FIA"],
       "teams": [
-        "Formula E",
-        "TAG Heuer Porsche Formula E Team",
-        "Jaguar TCS Racing",
-        "Andretti Formula E",
-        "DS Penske",
-        "Maserati MSG Racing",
-        "Nissan Formula E Team",
-        "NEOM McLaren Formula E Team",
-        "Envision Racing",
-        "Mahindra Racing",
-        "Lola Yamaha ABT",
-        
-        // Pilotos
-        "Pascal Wehrlein",
-        "Mitch Evans",
-        "Nick Cassidy",
-        "Antonio Felix da Costa",
-        "Jean-Eric Vergne",
-        "Stoffel Vandoorne"
+        "Formula E", "Porsche Formula E", "Jaguar TCS Racing", "Andretti Formula E", "DS Penske", "Maserati MSG", "Nissan Formula E", "McLaren Formula E",
+        "Pascal Wehrlein", "Mitch Evans", "Nick Cassidy", "Antonio Felix da Costa"
       ]
     },
+
     // ==========================================
-    // COMBAT SPORTS (BOXING, MMA, WRESTLING)
+    // DEPORTES DE COMBATE (DIVIDIDO EN 3)
     // ==========================================
     {
-      "leagueId": "UFC",
-      "leagueName": "MMA / UFC",
+      "leagueId": "UFC_MMA",
+      "leagueName": "UFC / MMA",
       "logo": "",
       "country": "International",
       "sport": "MMA",
-      // Keywords para atrapar eventos por el título si no reconoce nombres
-      "keywords": [
-        "UFC", "MMA", "Bellator", "PFL", "Fight Night", "Octagon", 
-        "RAF", "Renegade", "Covington", "Rockhold", "Mixed Martial Arts"
-      ],
+      "keywords": ["UFC", "MMA", "Bellator", "PFL", "Fight Night", "Octagon", "RAF"],
       "teams": [
-        "UFC", 
-        "Bellator MMA",
-        "PFL",
-        "RAF", "Real Arts of Fighting", // Por el ejemplo RAF 05
-        
-        // Peleadores MMA (Incluyendo los de tu ejemplo y Top Stars)
-        "Colby Covington", "Covington",
-        "Luke Rockhold", "Rockhold",
-        "Jon Jones",
-        "Conor McGregor",
-        "Islam Makhachev",
-        "Alex Pereira",
-        "Ilia Topuria",
-        "Sean O'Malley",
-        "Alexander Volkanovski",
-        "Max Holloway",
-        "Charles Oliveira",
-        "Dustin Poirier",
-        "Justin Gaethje",
-        "Tom Aspinall",
-        "Alexa Grasso",
-        "Brandon Moreno",
-        "Yair Rodriguez"
+        "UFC", "Bellator", "PFL", "RAF",
+        "Jon Jones", "Conor McGregor", "Islam Makhachev", "Alex Pereira", "Ilia Topuria", "Sean O'Malley", "Alexander Volkanovski", "Max Holloway", 
+        "Charles Oliveira", "Dustin Poirier", "Justin Gaethje", "Tom Aspinall", "Colby Covington", "Luke Rockhold",
+        "Alexa Grasso", "Brandon Moreno", "Yair Rodriguez"
       ]
     },
     {
@@ -928,154 +778,80 @@ export default function handler(req, res) {
       "logo": "",
       "country": "International",
       "sport": "Boxing",
-      // Keywords genéricas de tu feed
-      "keywords": [
-        "Boxing", "Boxeo", "Fight", "Pelea", "Main Event", 
-        "Tszyu", "Matias", "Kabayel" // Apellidos clave de carteleras actuales
-      ],
+      "keywords": ["Boxing", "Boxeo", "Fight", "Pelea", "Main Event", "Title Bout"],
       "teams": [
         "Boxeo", "Matchroom", "Top Rank", "PBC", "Golden Boy",
-        
-        // Boxeadores de TUS DATOS (Agregados para que haga match)
-        "Agit Kabayel", "Kabayel",
-        "Damian Knyba", "Knyba",
-        "Subriel Matias", "Matias",
-        "Dalton Smith",
-        "Nikita Tszyu", "Tszyu",
-        "Michael Zerafa", "Zerafa",
-        "Alexis Rocha", "Rocha",
-        "Raul Curiel", "Curiel",
-        
-        // Estrellas Globales
-        "Saul Alvarez", "Canelo",
-        "Tyson Fury",
-        "Oleksandr Usyk",
-        "Naoya Inoue",
-        "Terence Crawford",
-        "Gervonta Davis",
-        "Dmitry Bivol",
-        "Artur Beterbiev",
-        "David Benavidez",
-        "Devin Haney",
-        "Shakur Stevenson",
-        "Ryan Garcia",
-        "Teofimo Lopez",
-        "Jaime Munguia",
-        "Emanuel Navarrete",
-        "Isaac Cruz"
+        "Saul Alvarez", "Canelo", "Tyson Fury", "Oleksandr Usyk", "Naoya Inoue", "Terence Crawford", "Gervonta Davis", "Dmitry Bivol", "Artur Beterbiev", 
+        "David Benavidez", "Devin Haney", "Shakur Stevenson", "Ryan Garcia", "Isaac Cruz", "Jaime Munguia",
+        "Agit Kabayel", "Damian Knyba", "Subriel Matias", "Dalton Smith", "Nikita Tszyu", "Michael Zerafa", "Alexis Rocha", "Raul Curiel"
       ]
     },
     {
-      "leagueId": "WWE",
-      "leagueName": "Pro Wrestling (WWE/AEW)",
+      "leagueId": "PRO_WRESTLING",
+      "leagueName": "Wrestling (WWE/AEW)",
       "logo": "",
       "country": "USA",
       "sport": "Wrestling",
-      "keywords": [
-        "WWE", "AEW", "Collision", "Dynamite", "Rampage", // Por el ejemplo 'AEW: Saturday Night Collision'
-        "WrestleMania", "Royal Rumble", "SummerSlam", "Raw", "SmackDown", "NXT"
-      ],
+      "keywords": ["WWE", "AEW", "WrestleMania", "Royal Rumble", "SummerSlam", "Raw", "SmackDown", "NXT", "Collision", "Dynamite", "Rampage"],
       "teams": [
-        "WWE", 
-        "AEW", "All Elite Wrestling",
-        "TNA Wrestling",
-        "NJPW",
-        
-        // Superestrellas
-        "Roman Reigns",
-        "Cody Rhodes",
-        "Seth Rollins",
-        "CM Punk",
-        "The Rock", "Dwayne Johnson",
-        "John Cena",
-        "Randy Orton",
-        "Rhea Ripley",
-        "Becky Lynch",
-        "Gunther",
-        "Drew McIntyre",
-        "Jey Uso",
-        "Kenny Omega",
-        "Will Ospreay",
-        "Kazuchika Okada",
-        "MJF"
+        "WWE", "AEW", "TNA", "NJPW",
+        "Roman Reigns", "Cody Rhodes", "Seth Rollins", "CM Punk", "The Rock", "John Cena", "Randy Orton", "Rhea Ripley", "Becky Lynch", 
+        "Gunther", "Drew McIntyre", "Jey Uso", "Kenny Omega", "Will Ospreay", "MJF", "Kazuchika Okada"
       ]
     },
+
     // ==========================================
-    // TENNIS (ATP / WTA / GRAND SLAMS)
+    // TENIS (DIVIDIDO EN 4)
     // ==========================================
     {
-      "leagueId": "TENNIS_GLOBAL",
-      "leagueName": "Tennis (ATP/WTA)",
+      "leagueId": "TENNIS_GRAND_SLAM",
+      "leagueName": "Grand Slams",
       "logo": "",
       "country": "International",
       "sport": "Tennis",
-      "keywords": [
-        "Tennis", "Tenis", "ATP", "WTA", "Grand Slam",
-        "Australian Open", "Roland Garros", "French Open", "Wimbledon", "US Open",
-        "Open", "Masters 1000", "Finals", "Cup", "International", 
-        "Auckland Open", "Brisbane International", "Adelaide International", "United Cup"
-      ],
+      "keywords": ["Australian Open", "Roland Garros", "French Open", "Wimbledon", "US Open", "Grand Slam"],
       "teams": [
-        // Nombres de Torneos (Actúan como 'HomeTeam' en muchos feeds)
-        "Australian Open",
-        "Roland Garros",
-        "French Open",
-        "Wimbledon",
-        "US Open",
-        "United Cup",
-        "Brisbane International",
-        "Auckland Open",
-        "Adelaide International",
-        "Davis Cup",
-        "Laver Cup",
-        "Billie Jean King Cup",
-        "Indian Wells",
-        "Miami Open",
-        "Monte-Carlo Masters",
-        "Madrid Open",
-        "Italian Open",
-        "Canadian Open",
-        "Cincinnati Open",
-        "Shanghai Masters",
-        "Paris Masters",
-
-        // Top Players ATP (Official Names)
-        "Novak Djokovic",
-        "Carlos Alcaraz",
-        "Jannik Sinner",
-        "Daniil Medvedev",
-        "Alexander Zverev",
-        "Andrey Rublev",
-        "Holger Rune",
-        "Hubert Hurkacz",
-        "Stefanos Tsitsipas",
-        "Alex de Minaur",
-        "Casper Ruud",
-        "Taylor Fritz",
-        "Rafael Nadal",
-        "Grigor Dimitrov",
-        "Ben Shelton",
-        "Tommy Paul",
-        "Frances Tiafoe",
-
-        // Top Players WTA (Official Names)
-        "Iga Swiatek",
-        "Aryna Sabalenka",
-        "Coco Gauff",
-        "Elena Rybakina",
-        "Jessica Pegula",
-        "Ons Jabeur",
-        "Qinwen Zheng",
-        "Marketa Vondrousova",
-        "Maria Sakkari",
-        "Karolina Muchova",
-        "Barbora Krejcikova",
-        "Jelena Ostapenko",
-        "Daria Kasatkina",
-        "Beatriz Haddad Maia",
-        "Jasmine Paolini"
+        "Australian Open", "Roland Garros", "French Open", "Wimbledon", "US Open"
       ]
-    }
+    },
+    {
+      "leagueId": "TENNIS_CUPS",
+      "leagueName": "Copas de Tenis",
+      "logo": "",
+      "country": "International",
+      "sport": "Tennis",
+      "keywords": ["United Cup", "Davis Cup", "Laver Cup", "Billie Jean King Cup", "Hopman Cup"],
+      "teams": [
+        "United Cup", "Davis Cup", "Laver Cup", "Billie Jean King Cup"
+      ]
+    },
+    {
+      "leagueId": "TENNIS_ATP",
+      "leagueName": "ATP Tour (Masculino)",
+      "logo": "",
+      "country": "International",
+      "sport": "Tennis",
+      "keywords": ["ATP", "Masters", "Finals", "Brisbane International", "Adelaide International", "Auckland Open"],
+      "teams": [
+        "Brisbane International", "Adelaide International", "Auckland Open",
+        "Indian Wells", "Miami Open", "Monte-Carlo", "Madrid Open", "Italian Open", "Canadian Open", "Cincinnati Open", "Shanghai Masters", "Paris Masters",
+        "Novak Djokovic", "Carlos Alcaraz", "Jannik Sinner", "Daniil Medvedev", "Alexander Zverev", "Andrey Rublev", "Holger Rune", "Hubert Hurkacz", 
+        "Stefanos Tsitsipas", "Alex de Minaur", "Casper Ruud", "Taylor Fritz", "Rafael Nadal", "Grigor Dimitrov", "Ben Shelton", "Tommy Paul", "Frances Tiafoe"
+      ]
+    },
+    {
+      "leagueId": "TENNIS_WTA",
+      "leagueName": "WTA Tour (Femenino)",
+      "logo": "",
+      "country": "International",
+      "sport": "Tennis",
+      "keywords": ["WTA", "Brisbane International", "Adelaide International", "Auckland Open"],
+      "teams": [
+        "Brisbane International", "Adelaide International", "Auckland Open",
+        "Iga Swiatek", "Aryna Sabalenka", "Coco Gauff", "Elena Rybakina", "Jessica Pegula", "Ons Jabeur", "Qinwen Zheng", "Marketa Vondrousova", 
+        "Maria Sakkari", "Karolina Muchova", "Barbora Krejcikova", "Jelena Ostapenko", "Daria Kasatkina", "Beatriz Haddad Maia", "Jasmine Paolini"
+      ]
+    },
 
   ];
 
