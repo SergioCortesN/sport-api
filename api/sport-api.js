@@ -330,6 +330,34 @@ export default function handler(req, res) {
         "Žalgiris Vilnius", "Žalgiris"
       ]
     },
+    {
+      "leagueId": "LIGA_MX",
+      "leagueName": "Liga MX",
+      "logo": "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",
+      "country": "Mexico",
+      "sport": "Football",
+      "keywords": [],
+      "teams": [
+        "América", "Club América", "Las Águilas",
+        "Atlas",
+        "Atlético de San Luis", "San Luis",
+        "Cruz Azul", "La Máquina",
+        "FC Juarez", "Juárez", "Bravos",
+        "Guadalajara", "Chivas", "Rebaño Sagrado",
+        "León",
+        "Mazatlán FC", "Mazatlán",
+        "Monterrey", "Rayados",
+        "Necaxa",
+        "Pachuca", "Tuzos",
+        "Puebla", "La Franja",
+        "Pumas UNAM", "Pumas",
+        "Querétaro", "Gallos Blancos",
+        "Santos", "Santos Laguna",
+        "Tigres UANL", "Tigres",
+        "Tijuana", "Xolos",
+        "Toluca", "Diablos Rojos"
+      ]
+    },
   ];
 
   // Respondemos con el JSON y estado 200 (OK)
