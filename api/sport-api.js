@@ -701,6 +701,9 @@ export default function handler(req, res) {
         "Kiwoom Heroes"
       ]
     },
+    // ==========================================
+    // DEPORTES DE MOTOR (4 CATEGORÍAS FIJAS)
+    // ==========================================
     {
       "leagueId": "FORMULA_1",
       "leagueName": "Formula 1",
@@ -709,8 +712,8 @@ export default function handler(req, res) {
       "sport": "Motorsport",
       "keywords": ["Formula 1", "F1", "Grand Prix", "GP", "Qualifying", "Sprint", "Practice"],
       "teams": [
-        "Formula 1", "Red Bull", "Mercedes", "Ferrari", "McLaren", "Aston Martin",
-        "Max Verstappen", "Checo Perez", "Lewis Hamilton", "Charles Leclerc", "Lando Norris", "Fernando Alonso", "Franco Colapinto"
+        "Formula 1", "F1", "Red Bull", "Mercedes", "Ferrari", "McLaren", "Aston Martin", "Alpine", "Williams", "Haas", "Sauber", "RB",
+        "Max Verstappen", "Checo Perez", "Sergio Perez", "Lewis Hamilton", "Charles Leclerc", "Lando Norris", "Fernando Alonso", "Franco Colapinto"
       ]
     },
     {
@@ -719,7 +722,7 @@ export default function handler(req, res) {
       "logo": "",
       "country": "International",
       "sport": "Motorsport",
-      "keywords": ["MotoGP", "Moto2", "Moto3", "Grand Prix", "GP", "Tissot Sprint"],
+      "keywords": ["MotoGP", "Moto2", "Moto3", "Grand Prix", "GP", "Sprint"],
       "teams": [
         "MotoGP", "Ducati", "Pramac", "Aprilia", "KTM", "Yamaha", "Honda",
         "Pecco Bagnaia", "Jorge Martin", "Marc Marquez", "Pedro Acosta", "Fabio Quartararo"
@@ -745,24 +748,27 @@ export default function handler(req, res) {
       "sport": "Motorsport",
       "keywords": ["Formula E", "E-Prix", "ABB FIA"],
       "teams": [
-        "Formula E", "Porsche", "Jaguar", "Andretti", "Maserati", "Nissan", "McLaren"
+        "Formula E", "Porsche", "Jaguar", "Andretti", "Maserati", "Nissan", "McLaren", "Wehrlein", "Evans", "Cassidy"
       ]
     },
 
+    // ==========================================
+    // DEPORTES DE COMBATE (3 CATEGORÍAS FIJAS)
+    // Basado en tus logs: "RAF 05", "Agit Kabayel", "AEW Collision"
+    // ==========================================
     {
       "leagueId": "UFC_MMA",
       "leagueName": "UFC / MMA",
       "logo": "",
       "country": "International",
       "sport": "MMA",
-      "keywords": ["UFC", "MMA", "Bellator", "PFL", "Fight Night", "RAF", "Renegade", "Octagon"],
+      // Agregado "RAF", "Renegade" y los apellidos de la cartelera
+      "keywords": ["UFC", "MMA", "Bellator", "PFL", "Fight Night", "RAF", "Renegade", "Covington", "Rockhold"],
       "teams": [
-        "UFC", "Bellator", "PFL", "RAF",
-        // Datos de tu ejemplo
-        "Colby Covington", "Covington", 
+        "UFC", "Bellator", "PFL", "RAF", "Renegade",
+        "Colby Covington", "Covington",
         "Luke Rockhold", "Rockhold",
-        // Estrellas
-        "Jon Jones", "Conor McGregor", "Ilia Topuria", "Sean O'Malley", "Alex Pereira", "Alexa Grasso", "Brandon Moreno", "Yair Rodriguez"
+        "Jon Jones", "Conor McGregor", "Ilia Topuria", "Sean O'Malley", "Alex Pereira", "Brandon Moreno", "Yair Rodriguez"
       ]
     },
     {
@@ -771,15 +777,16 @@ export default function handler(req, res) {
       "logo": "",
       "country": "International",
       "sport": "Boxing",
-      "keywords": [],
+      // Agregados apellidos clave de tus logs para que el Title Match funcione
+      "keywords": ["Boxing", "Boxeo", "Fight", "Pelea", "Title Bout", "Kabayel", "Tszyu", "Matias", "Rocha"],
       "teams": [
-        "Matchroom", "Top Rank", "PBC", "Golden Boy",
-        // Datos de tu ejemplo
+        "Boxeo", "Matchroom", "Top Rank", "PBC", "Golden Boy",
+        // Nombres exactos de tu log
         "Agit Kabayel", "Kabayel", "Damian Knyba", 
         "Subriel Matias", "Matias", "Dalton Smith", 
         "Nikita Tszyu", "Tszyu", "Michael Zerafa", 
-        "Alexis Rocha", "Raul Curiel",
-        // Estrellas
+        "Alexis Rocha", "Rocha", "Raul Curiel",
+        // Generales
         "Canelo", "Saul Alvarez", "Tyson Fury", "Usyk", "Inoue", "Crawford", "Davis", "Benavidez", "Ryan Garcia", "Pitbull Cruz"
       ]
     },
@@ -788,10 +795,11 @@ export default function handler(req, res) {
       "leagueName": "Wrestling (WWE/AEW)",
       "logo": "",
       "country": "USA",
-      "sport": "Wrestling",
+      "sport": "Fight",
+      // Agregado "Collision" explícitamente
       "keywords": ["WWE", "AEW", "Collision", "Dynamite", "Rampage", "WrestleMania", "Royal Rumble", "SmackDown", "Raw", "NXT"],
       "teams": [
-        "WWE", "AEW", "TNA", "NJPW",
+        "WWE", "AEW", "All Elite Wrestling", "TNA", "NJPW",
         "Roman Reigns", "Cody Rhodes", "CM Punk", "The Rock", "Seth Rollins", "Rhea Ripley", "Kenny Omega", "MJF"
       ]
     },
