@@ -702,149 +702,298 @@ export default function handler(req, res) {
       ]
     },
     // ==========================================
-    // DEPORTES DE MOTOR (SOLO EVENTOS/TORNEOS)
-    // Sport: "Motor Sports"
+    // 1. FORMULA 1 (La categoría reina)
     // ==========================================
-
-    // 1. FORMULA 1
     {
       "leagueId": "FORMULA_1",
       "leagueName": "Formula 1",
       "logo": "",
       "country": "International",
       "sport": "Motor Sports",
-      "keywords": ["Formula 1", "F1", "Grand Prix", "GP", "Qualifying", "Sprint", "Practice"],
+      "keywords": [
+        "Formula 1", "F1", "Grand Prix", "GP", "Gran Premio",
+        "Qualifying", "Clasificación", "Sprint", "Practice", "Práctica"
+      ],
       "teams": [
-        "Formula 1", 
-        "F1", 
-        "Grand Prix", 
-        "GP"
+        "Formula 1", "F1",
+        "Red Bull", "Mercedes", "Ferrari", "McLaren", "Aston Martin", "Alpine", "Williams", "Haas", "Sauber", "RB"
       ]
     },
 
-    // 2. MOTOS & SUPERCROSS (MotoGP, AMA, MX)
+    // ==========================================
+    // 2. MOTOS DE PISTA (MotoGP, Superbike)
+    // ==========================================
     {
-      "leagueId": "MOTO_SUPERCROSS",
-      "leagueName": "MotoGP / Supercross",
+      "leagueId": "MOTO_ROAD_RACING",
+      "leagueName": "MotoGP / SBK",
       "logo": "",
       "country": "International",
       "sport": "Motor Sports",
       "keywords": [
-        "MotoGP", "Moto2", "Moto3", 
-        "Supercross", "AMA Supercross", "Anaheim", 
-        "Motocross", "MXGP", 
-        "Superbike", "WSBK"
+        "MotoGP", "Moto2", "Moto3", "Grand Prix", 
+        "Superbike", "WSBK", "WorldSBK", "Isle of Man TT"
       ],
       "teams": [
-        "MotoGP", 
-        "Moto2", 
-        "Moto3", 
-        "Supercross", 
-        "AMA Supercross", 
-        "Motocross", 
-        "MXGP", 
-        "Superbike", 
-        "WSBK"
+        "MotoGP", "Moto2", "Moto3", "WSBK", "Superbike",
+        "Ducati", "Yamaha", "Honda", "KTM", "Aprilia"
       ]
     },
 
-    // 3. FORMULA E
+    // ==========================================
+    // 3. MOTOCROSS & SUPERCROSS (Off-road)
+    // Incluye tu dato: "Supercross: Anaheim"
+    // ==========================================
     {
-      "leagueId": "FORMULA_E",
-      "leagueName": "Formula E",
+      "leagueId": "MOTO_OFFROAD",
+      "leagueName": "Supercross / Motocross",
       "logo": "",
       "country": "International",
       "sport": "Motor Sports",
-      "keywords": ["Formula E", "E-Prix", "ABB FIA", "Mexico City"],
+      "keywords": [
+        "Supercross", "AMA Supercross", "Anaheim", // Dato específico
+        "Motocross", "MXGP", "Pro Motocross", "SuperMotocross", "SMX",
+        "X-Trial", "TrialGP"
+      ],
       "teams": [
-        "Formula E", 
-        "ABB FIA Formula E", 
-        "E-Prix"
+        "Supercross", "AMA Supercross", 
+        "Motocross", "MXGP", 
+        "Anaheim" // Por si la API lo manda como HomeTeam
       ]
     },
 
-    // 4. USA RACING (NASCAR / INDYCAR)
+    // ==========================================
+    // 4. FORMULA E & ELECTRIC (Coches eléctricos)
+    // Incluye tu dato: "Formula E: Race: Mexico City"
+    // ==========================================
     {
-      "leagueId": "NASCAR_INDY",
+      "leagueId": "FORMULA_E",
+      "leagueName": "Formula E / Electric",
+      "logo": "",
+      "country": "International",
+      "sport": "Motor Sports",
+      "keywords": [
+        "Formula E", "E-Prix", "ABB FIA", "Electric", 
+        "Mexico City", "Berlin", "Monaco", "Tokyo" // Ciudades comunes del calendario
+      ],
+      "teams": [
+        "Formula E", "ABB FIA Formula E",
+        "Porsche", "Jaguar", "Andretti", "Maserati", "Nissan", "McLaren", "DS Penske"
+      ]
+    },
+
+    // ==========================================
+    // 5. USA RACING (NASCAR & INDYCAR)
+    // ==========================================
+    {
+      "leagueId": "USA_RACING",
       "leagueName": "NASCAR / IndyCar",
       "logo": "",
       "country": "USA",
       "sport": "Motor Sports",
-      "keywords": ["NASCAR", "Cup Series", "Xfinity", "Truck Series", "IndyCar", "Indy 500", "Daytona 500"],
+      "keywords": [
+        "NASCAR", "Cup Series", "Xfinity", "Truck Series", "Daytona", 
+        "IndyCar", "Indy 500", "Indianapolis 500"
+      ],
       "teams": [
-        "NASCAR", 
-        "Cup Series", 
-        "Xfinity Series", 
-        "Truck Series", 
-        "IndyCar", 
-        "NTT IndyCar Series", 
-        "Indy 500"
+        "NASCAR", "Cup Series", 
+        "IndyCar", "NTT IndyCar Series", 
+        "Penske", "Ganassi", "Hendrick", "Gibbs"
       ]
     },
 
-    // 5. RALLY & ENDURANCE (WRC, Dakar, Le Mans)
+    // ==========================================
+    // 6. RALLY & RAID (WRC, Dakar)
+    // ==========================================
     {
-      "leagueId": "RALLY_WEC",
-      "leagueName": "Rally / WEC",
+      "leagueId": "RALLY_RAID",
+      "leagueName": "Rally (WRC) / Dakar",
       "logo": "",
       "country": "International",
       "sport": "Motor Sports",
-      "keywords": ["WRC", "Rally", "Dakar", "WEC", "Le Mans", "IMSA", "24 Hours"],
+      "keywords": [
+        "WRC", "Rally", "World Rally Championship", 
+        "Dakar", "Rally Raid", "ERC"
+      ],
       "teams": [
-        "WRC", 
-        "World Rally Championship", 
-        "Rally", 
-        "Dakar Rally", 
-        "WEC", 
-        "World Endurance Championship", 
-        "IMSA"
+        "WRC", "Rally", "Dakar",
+        "Toyota Gazoo", "Hyundai Motorsport", "Ford M-Sport"
       ]
     },
 
     // ==========================================
-    // DEPORTES DE COMBATE (3 CATEGORÍAS FIJAS)
-    // Sport unificado: "Fight"
+    // 7. ENDURANCE & GT (Resistencia)
     // ==========================================
     {
-      "leagueId": "UFC_MMA",
+      "leagueId": "ENDURANCE_GT",
+      "leagueName": "WEC / IMSA / GT",
+      "logo": "",
+      "country": "International",
+      "sport": "Motor Sports",
+      "keywords": [
+        "WEC", "World Endurance Championship", "Le Mans", "24 Hours", "24 Heures",
+        "IMSA", "Daytona 24", "Petit Le Mans",
+        "GT3", "GT World Challenge", "DTM"
+      ],
+      "teams": [
+        "WEC", "IMSA", "Le Mans",
+        "Porsche Penske", "Ferrari AF Corse", "Cadillac Racing", "BMW M Team"
+      ]
+    },
+
+    // ==========================================
+    // 8. TOURING CARS (Turismos)
+    // ==========================================
+    {
+      "leagueId": "TOURING_CARS",
+      "leagueName": "Touring Cars (TCR/Supercars)",
+      "logo": "",
+      "country": "International",
+      "sport": "Motor Sports",
+      "keywords": [
+        "Supercars", "Bathurst", "Repco Supercars", // Australia
+        "BTCC", // UK
+        "TCR", "TCR World Tour",
+        "Stock Car" // Brasil
+      ],
+      "teams": [
+        "Supercars", "BTCC", "TCR", "Stock Car"
+      ]
+    },
+
+    // ==========================================
+    // 1. MMA (Artes Marciales Mixtas)
+    // Incluye: UFC, Bellator, PFL, y ligas regionales como RAF
+    // ==========================================
+    {
+      "leagueId": "MMA_GLOBAL",
       "leagueName": "UFC / MMA",
       "logo": "",
       "country": "International",
       "sport": "Fight",
-      "keywords": ["UFC", "MMA", "Bellator", "PFL", "Fight Night", "RAF", "Renegade", "Covington", "Rockhold"],
+      "keywords": [
+        "UFC", "MMA", "Bellator", "PFL", "Fight Night", "Octagon", 
+        "Mixed Martial Arts", "Cage", 
+        "RAF", "Renegade", "Real Arts of Fighting", // Tu ejemplo RAF 05
+        "Covington", "Rockhold" // Nombres de tu ejemplo
+      ],
       "teams": [
-        "UFC", "Bellator", "PFL", "RAF", "Renegade",
-        "Colby Covington", "Covington",
-        "Luke Rockhold", "Rockhold",
-        "Jon Jones", "Conor McGregor", "Ilia Topuria", "Sean O'Malley", "Alex Pereira", "Brandon Moreno", "Yair Rodriguez"
+        "UFC", "Bellator", "PFL", "RAF", "Renegade", "KSW", "Cage Warriors",
+        "Colby Covington", "Luke Rockhold", // Para asegurar match si la API los pone como team
+        "Jon Jones", "Conor McGregor", "Islam Makhachev", "Ilia Topuria"
       ]
     },
+
+    // ==========================================
+    // 2. BOXEO (Profesional y Amateur)
+    // Incluye: Títulos mundiales y carteleras locales
+    // ==========================================
     {
-      "leagueId": "BOXING",
+      "leagueId": "BOXING_GLOBAL",
       "leagueName": "Boxeo",
       "logo": "",
       "country": "International",
       "sport": "Fight",
-      "keywords": ["Boxing", "Boxeo", "Fight", "Pelea", "Title Bout", "Kabayel", "Tszyu", "Matias", "Rocha"],
+      "keywords": [
+        "Boxing", "Boxeo", "Fight", "Pelea", "Title Bout", "Main Event", "Ring",
+        // Apellidos de tu ejemplo de hoy
+        "Kabayel", "Knyba", "Matias", "Smith", "Rocha", "Curiel" 
+      ],
       "teams": [
-        "Boxeo", "Matchroom", "Top Rank", "PBC", "Golden Boy",
-        "Agit Kabayel", "Kabayel", "Damian Knyba", 
-        "Subriel Matias", "Matias", "Dalton Smith", 
-        "Nikita Tszyu", "Tszyu", "Michael Zerafa", 
-        "Alexis Rocha", "Rocha", "Raul Curiel",
-        "Canelo", "Saul Alvarez", "Tyson Fury", "Usyk", "Inoue", "Crawford", "Davis", "Benavidez", "Ryan Garcia", "Pitbull Cruz"
+        "Boxeo", "Matchroom", "Top Rank", "PBC", "Golden Boy", "DAZN Boxing",
+        // Tus datos específicos
+        "Agit Kabayel", "Damian Knyba", 
+        "Subriel Matias", "Dalton Smith",
+        "Alexis Rocha", "Raul Curiel",
+        // Genéricos
+        "Canelo", "Tyson Fury", "Usyk", "Inoue"
       ]
     },
+
+    // ==========================================
+    // 3. PRO WRESTLING (Lucha Libre de Entretenimiento)
+    // Incluye: WWE, AEW, NJPW, TNA
+    // ==========================================
     {
-      "leagueId": "WRESTLING",
+      "leagueId": "WRESTLING_PRO",
       "leagueName": "Wrestling (WWE/AEW)",
       "logo": "",
       "country": "USA",
       "sport": "Fight",
-      "keywords": ["WWE", "AEW", "Collision", "Dynamite", "Rampage", "WrestleMania", "Royal Rumble", "SmackDown", "Raw", "NXT"],
+      "keywords": [
+        "WWE", "AEW", "Wrestling", "Lucha Libre", 
+        "WrestleMania", "Royal Rumble", "SummerSlam", 
+        "Raw", "SmackDown", "NXT", 
+        "Dynamite", "Rampage", "Collision", "All In" // "Collision" de tu ejemplo
+      ],
       "teams": [
-        "WWE", "AEW", "All Elite Wrestling", "TNA", "NJPW",
-        "Roman Reigns", "Cody Rhodes", "CM Punk", "The Rock", "Seth Rollins", "Rhea Ripley", "Kenny Omega", "MJF"
+        "WWE", "AEW", "All Elite Wrestling", "TNA", "NJPW", "AAA", "CMLL",
+        "Collision", // Para asegurar match con 'AEW: Saturday Night Collision'
+        "Roman Reigns", "Cody Rhodes", "CM Punk"
+      ]
+    },
+
+    // ==========================================
+    // 4. KICKBOXING & MUAY THAI (Striking puro)
+    // Incluye: Glory, ONE Championship, K-1
+    // ==========================================
+    {
+      "leagueId": "KICKBOXING_MUAY_THAI",
+      "leagueName": "Kickboxing / Muay Thai",
+      "logo": "",
+      "country": "International",
+      "sport": "Fight",
+      "keywords": [
+        "Kickboxing", "Muay Thai", "Glory", "ONE Championship", "K-1", 
+        "Thai Boxing", "Enfusion", "Rise"
+      ],
+      "teams": [
+        "Glory", "Glory Kickboxing", 
+        "ONE Championship", "ONE", 
+        "K-1", "K1"
+      ]
+    },
+
+    // ==========================================
+    // 5. BARE KNUCKLE (Boxeo sin guantes)
+    // Categoría en crecimiento (BKFC)
+    // ==========================================
+    {
+      "leagueId": "BARE_KNUCKLE",
+      "leagueName": "Bare Knuckle (BKFC)",
+      "logo": "",
+      "country": "International",
+      "sport": "Fight",
+      "keywords": [
+        "BKFC", "Bare Knuckle", "Knuckle", "Byb"
+      ],
+      "teams": [
+        "BKFC", "Bare Knuckle Fighting Championship", 
+        "Mike Perry" // Estrella actual de este deporte
+      ]
+    },
+
+    // ==========================================
+    // 6. ARTES MARCIALES TRADICIONALES / OLÍMPICAS
+    // Incluye: Judo, Karate, Taekwondo, Sumo
+    // ==========================================
+    {
+      "leagueId": "MARTIAL_ARTS_TRADITIONAL",
+      "leagueName": "Judo / Karate / Sumo",
+      "logo": "",
+      "country": "International",
+      "sport": "Fight",
+      "keywords": [
+        "Judo", "IJF", "Grand Slam", 
+        "Karate", "WKF", 
+        "Taekwondo", "WT", 
+        "Sumo", "Basho", 
+        "Jiu-Jitsu", "BJJ", "ADCC"
+      ],
+      "teams": [
+        "IJF", "World Judo Tour", 
+        "WKF", "Karate 1", 
+        "Sumo", "Grand Sumo", 
+        "ADCC", "IBJJF"
       ]
     },
     // ==========================================
