@@ -722,92 +722,13 @@ export default function handler(req, res) {
     },
 
     // ==========================================
-    // 5. USA RACING (NASCAR & INDYCAR)
-    // ==========================================
-    {
-      "leagueId": "USA_RACING",
-      "leagueName": "NASCAR / IndyCar",
-      "logo": "",
-      "country": "USA",
-      "sport": "Motor Sports",
-      "keywords": [
-        "NASCAR", "Cup Series", "Xfinity", "Truck Series", "Daytona", 
-        "IndyCar", "Indy 500", "Indianapolis 500"
-      ],
-      "teams": [
-        "NASCAR", "Cup Series", 
-        "IndyCar", "NTT IndyCar Series", 
-        "Penske", "Ganassi", "Hendrick", "Gibbs"
-      ]
-    },
-
-    // ==========================================
-    // 6. RALLY & RAID (WRC, Dakar)
-    // ==========================================
-    {
-      "leagueId": "RALLY_RAID",
-      "leagueName": "Rally (WRC) / Dakar",
-      "logo": "",
-      "country": "International",
-      "sport": "Motor Sports",
-      "keywords": [
-        "WRC", "Rally", "World Rally Championship", 
-        "Dakar", "Rally Raid", "ERC"
-      ],
-      "teams": [
-        "WRC", "Rally", "Dakar",
-        "Toyota Gazoo", "Hyundai Motorsport", "Ford M-Sport"
-      ]
-    },
-
-    // ==========================================
-    // 7. ENDURANCE & GT (Resistencia)
-    // ==========================================
-    {
-      "leagueId": "ENDURANCE_GT",
-      "leagueName": "WEC / IMSA / GT",
-      "logo": "",
-      "country": "International",
-      "sport": "Motor Sports",
-      "keywords": [
-        "WEC", "World Endurance Championship", "Le Mans", "24 Hours", "24 Heures",
-        "IMSA", "Daytona 24", "Petit Le Mans",
-        "GT3", "GT World Challenge", "DTM"
-      ],
-      "teams": [
-        "WEC", "IMSA", "Le Mans",
-        "Porsche Penske", "Ferrari AF Corse", "Cadillac Racing", "BMW M Team"
-      ]
-    },
-
-    // ==========================================
-    // 8. TOURING CARS (Turismos)
-    // ==========================================
-    {
-      "leagueId": "TOURING_CARS",
-      "leagueName": "Touring Cars (TCR/Supercars)",
-      "logo": "",
-      "country": "International",
-      "sport": "Motor Sports",
-      "keywords": [
-        "Supercars", "Bathurst", "Repco Supercars", // Australia
-        "BTCC", // UK
-        "TCR", "TCR World Tour",
-        "Stock Car" // Brasil
-      ],
-      "teams": [
-        "Supercars", "BTCC", "TCR", "Stock Car"
-      ]
-    },
-
-    // ==========================================
     // 1. MMA (Artes Marciales Mixtas)
     // Incluye: UFC, Bellator, PFL, y ligas regionales como RAF
     // ==========================================
     {
       "leagueId": "MMA_GLOBAL",
       "leagueName": "UFC / MMA",
-      "logo": "",
+      "logo": "data:image/webp;base64,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",
       "country": "International",
       "sport": "Fight",
       "keywords": [
@@ -830,7 +751,7 @@ export default function handler(req, res) {
     {
       "leagueId": "BOXING_GLOBAL",
       "leagueName": "Boxeo",
-      "logo": "",
+      "logo": "data:image/webp;base64,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",
       "country": "International",
       "sport": "Fight",
       "keywords": [
@@ -856,7 +777,7 @@ export default function handler(req, res) {
     {
       "leagueId": "WRESTLING_PRO",
       "leagueName": "Wrestling (WWE/AEW)",
-      "logo": "",
+      "logo": "data:image/webp;base64,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",
       "country": "USA",
       "sport": "Fight",
       "keywords": [
@@ -872,70 +793,6 @@ export default function handler(req, res) {
       ]
     },
 
-    // ==========================================
-    // 4. KICKBOXING & MUAY THAI (Striking puro)
-    // Incluye: Glory, ONE Championship, K-1
-    // ==========================================
-    {
-      "leagueId": "KICKBOXING_MUAY_THAI",
-      "leagueName": "Kickboxing / Muay Thai",
-      "logo": "",
-      "country": "International",
-      "sport": "Fight",
-      "keywords": [
-        "Kickboxing", "Muay Thai", "Glory", "ONE Championship", "K-1", 
-        "Thai Boxing", "Enfusion", "Rise"
-      ],
-      "teams": [
-        "Glory", "Glory Kickboxing", 
-        "ONE Championship", "ONE", 
-        "K-1", "K1"
-      ]
-    },
-
-    // ==========================================
-    // 5. BARE KNUCKLE (Boxeo sin guantes)
-    // Categoría en crecimiento (BKFC)
-    // ==========================================
-    {
-      "leagueId": "BARE_KNUCKLE",
-      "leagueName": "Bare Knuckle (BKFC)",
-      "logo": "",
-      "country": "International",
-      "sport": "Fight",
-      "keywords": [
-        "BKFC", "Bare Knuckle", "Knuckle", "Byb"
-      ],
-      "teams": [
-        "BKFC", "Bare Knuckle Fighting Championship", 
-        "Mike Perry" // Estrella actual de este deporte
-      ]
-    },
-
-    // ==========================================
-    // 6. ARTES MARCIALES TRADICIONALES / OLÍMPICAS
-    // Incluye: Judo, Karate, Taekwondo, Sumo
-    // ==========================================
-    {
-      "leagueId": "MARTIAL_ARTS_TRADITIONAL",
-      "leagueName": "Judo / Karate / Sumo",
-      "logo": "",
-      "country": "International",
-      "sport": "Fight",
-      "keywords": [
-        "Judo", "IJF", "Grand Slam", 
-        "Karate", "WKF", 
-        "Taekwondo", "WT", 
-        "Sumo", "Basho", 
-        "Jiu-Jitsu", "BJJ", "ADCC"
-      ],
-      "teams": [
-        "IJF", "World Judo Tour", 
-        "WKF", "Karate 1", 
-        "Sumo", "Grand Sumo", 
-        "ADCC", "IBJJF"
-      ]
-    },
     // ==========================================
     // TENIS (DIVIDIDO EN 4)
     // ==========================================
